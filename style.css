@@ -1,0 +1,39 @@
+body {
+    padding:0 16px;
+}
+.avatar {
+    border-radius: 50%;
+    width:200px;   
+        }
+
+.fontstyle {
+    font-family: Quantico, Georgia, Helvetica, Sans-serif;
+}
+
+.section {
+    text-align: center;
+    height: 300px;
+    padding:0 16px;
+    margin-top: 50px;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    margin-top: 50px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.7);
+}
+
+.container2 {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    margin-top: -100px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.7);
+}

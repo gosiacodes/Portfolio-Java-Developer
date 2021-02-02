@@ -2,39 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio uppgift">
     <meta name="keywords" content="Portfolio, Java Developer, javautvecklare, javaprogrammering, HTML, CSS, Java, Malgorzata Pick">
     <meta name="author" content="Malgorzata Pick">
     <title>Malgorzata Pick | Java Developer</title>
+    <link rel="icon" href="pics/Logo.gif" type="image/gif" sizes="16x16">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3318035e44.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3318035e44.js"></script>
 </head>
 
-<body>
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="english.html">English</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Svenska</a>
-        </li>
-    </ul>    
+<body>    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light backgroundstyle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo" width="60" height="60"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul> 
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Svenska</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="english.html">English</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
     
-    <div class="text-center">
-        <h1 class="text-success fontstyle" style="background-color:$cyan-800">Junior Java Developer</h1>
-        <span class="text-info fontstyle" style="font-size:35px">Malgorzata Pick</span>
-        <p><img src="Malgorzata.jpg" alt="Avatar" class="avatar"></p>   
+    <div class="text-center" id="home">
+        <p class="text-success fontstyle" style="font-size:45px">Junior Java Developer</p>
+        <p class="text-info fontstyle" style="font-size:35px">Malgorzata Pick</p>
+        <p><img src="pics/Malgorzata.jpg" alt="avatar" class="avatar"></p>   
     </div>
        
     <section class="section bg-info">      
         <div class="container">
             <h5 class="card-header bg-info fontstyle">Om mig</h5>
             <div class="card-body">
-                <p class="card-text">Hej! Mitt namn är Malgorzata och jag bor i Malmö. Jag är blivande Javautvecklare med passion för datorer, teknik och internet. Just nu är jag inne på min fjärde termin i Javautvecklare-programmet på <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> i Malmö och söker LIA (Lärande i arbete) – praktikplats, där jag som student kan vidareutveckla mina nyvunna färdigheter under vägledning av en handledare. ...</p>
+                <p class="card-text">Hej! Mitt namn är Malgorzata och jag bor i Malmö. Jag är blivande Javautvecklare med passion för datorer, teknik och internet. Mitt dröm är att vara webbutvecklare. Just nu är jag inne på min fjärde termin i Javautvecklare-programmet på <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> i Malmö och söker LIA (Lärande i arbete) – praktikplats, där jag som student kan vidareutveckla mina nyvunna färdigheter under vägledning av en handledare. Inom ramen för Java jobbade jag bl.a. med API:er, databaser, ramverk och Androidutveckling. Jag slutade också kurser i HTML, CSS och JavaScript, samt fick jag också erfarenhet av GitHub och agila metoder.</p>
             </div> 
         </div>        
     </section>
@@ -42,7 +64,7 @@
     <div class="container container2">
         <div class="row">
             <div class="col-sm">
-                <div class="card " style="width: 20rem;">
+                <div class="card">
                     <div class="card-body">
                         <h5 class="card-header bg-info fontstyle">Kurser</h5>
                         <p class="card-text">
@@ -65,7 +87,7 @@
                 </div>
             </div>
             <div class="col-sm">
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                     <div class="card-body">
                         <h5 class="card-header bg-info fontstyle">Verktyg</h5>
                         <p class="card-text">
@@ -88,7 +110,7 @@
                 </div>
             </div>
             <div class="col-sm">
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                     <div class="card-body">
                         <h5 class="card-header bg-info fontstyle">Programmeringsspråk</h5>
                         <p class="card-text">
@@ -97,6 +119,7 @@
                                 <li class="list-group-item">CSS</li>
                                 <li class="list-group-item">JavaScript</li>
                                 <li class="list-group-item">Java</li>
+                                <li class="list-group-item">Java FX</li>
                             </ul>  
                         </p>
                     </div>
@@ -108,11 +131,12 @@
     <footer>
         <div class="footer bg-info">
             <p><h5 class="fontstyle">Kontakta mig: 
-                <a href="https://www.linkedin.com" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>
                 <a href="contact.html" class="text-light"><i class="fas fa-envelope-square"></i></a>
                 </h5>
             </p>
-            <p><center>Copyright &copy; 2021</center></p>
+            <p><center>Copyright &copy; 2021 | Malgorzata Pick | Junior Javautvecklare</center></p>
+        </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

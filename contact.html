@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio uppgift">
-    <meta name="keywords" content="Portfolio, Java Developer, javautvecklare, javaprogrammering, HTML, CSS, Java, Malgorzata Pick">
-    <meta name="author" content="Malgorzata Pick">
-    <title>Malgorzata Pick | Java Developer</title>
-    <link rel="icon" href="pics/Logo.gif" type="image/gif" sizes="16x16">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3318035e44.js"></script>   
-<style>
-input[type=text], select, textarea, email {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
-}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="Portfolio, Java Developer, javautvecklare, javaprogrammering, HTML, CSS, Java, Malgorzata Pick">
+        <meta name="author" content="Malgorzata Pick">
+        <title>Malgorzata Pick | Java Developer</title>
+        <link rel="icon" href="pics/Logo.gif" type="image/gif" sizes="16x16">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3318035e44.js"></script>   
+        
+        <style>
+        input[type=text], select, textarea, email {
+          width: 100%; 
+          padding: 12px; 
+          border: 1px solid #ccc; 
+          border-radius: 4px; 
+          box-sizing: border-box; 
+          margin-top: 6px; 
+          margin-bottom: 16px; 
+          resize: vertical 
+        }
 
-.container {
-  border-radius: 5px;
-  padding: 20px;
-}
-</style>
-  
-</head>
+        .container {
+          border-radius: 5px;
+          padding: 20px;
+        }
+        </style>
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-light backgroundstyle">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo" width="60" height="60"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Svenska</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">English</a>
-                    </li>
-                </ul> 
+    </head>
+    
+    <body>
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light backgroundstyle">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo" width="60" height="60"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="english.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://www.linkedin.com/in/malgorzatapick/" target="_blank">LinkedIn Profile</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact form</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Svenska</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">English</a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+
+        <div class="container bg-light" id="home">
+            <div class="row">
+                <div class="card mx-auto border-info" style="width: 30rem;">
+                    <div class="card-body">
+                        <h5 class="text-info fontstyle">Contact me</h5>
+                        <form method="post" action="action_page.php">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" placeholder="name@example.com">
+                            <label for="subject">Message</label>
+                            <textarea id="subject" name="subject" placeholder="Write a message" style="height:200px"></textarea>
+                            <input type="submit" value="Send" class="btn btn-info fontstyle">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-</nav>
-
-<div class="container bg-light" id="home">
-    <div class="row">
-        <div class="card mx-auto border-info" style="width: 30rem;">
-            <div class="card-body">
-                <h5 class="text-info fontstyle">Contact me</h5>
-                <form method="post" action="action_page.php">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name">
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="name@example.com">
-                    <label for="subject">Message</label>
-                    <textarea id="subject" name="subject" placeholder="Write a message" style="height:200px"></textarea>
-                    <input type="submit" value="Send" class="btn btn-info fontstyle">
-                </form>
+    
+        <footer>
+            <div class="footer bg-info">
+                <h5 class="fontstyle">Contact me: 
+                    <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>
+                    <a href="contact.html" class="text-light"><i class="fas fa-envelope-square"></i></a>
+                </h5>
+                <p><center>Copyright &copy; 2021 | Malgorzata Pick | Junior Java Developer</center></p>
             </div>
-        </div>
-    </div>
-</div>
-    
-<footer>
-    <div class="footer bg-info">
-        <p><h5 class="fontstyle">Contact me: 
-            <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>
-            <a href="contact.html" class="text-light"><i class="fas fa-envelope-square"></i></a>
-            </h5></p>
-        <p><center>Copyright &copy; 2021 | Malgorzata Pick | Junior Javautvecklare</center></p>
-    </div>
-</footer>
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        </footer>
 
-</body>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        
+    </body>
 </html>

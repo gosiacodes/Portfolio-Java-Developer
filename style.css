@@ -1,6 +1,7 @@
 body {
     padding:0 16px;
 }
+
 .avatar {
     border-radius: 50%;
     width:200px; 
@@ -29,7 +30,7 @@ body {
 
 .footer {
     position: relative;
-    padding:16px;
+    padding:30px;
     bottom: 0;
     width: 100%;
     height: 150px;
@@ -44,6 +45,21 @@ body {
 #home {
     margin-top: 100px;
 }
+
 .backgroundstyle {
     background: rgba(69, 183, 199, 0.4);
+}
+
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+    }
 }

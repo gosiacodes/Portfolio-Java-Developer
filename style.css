@@ -14,17 +14,31 @@ body {
 
 .section {
     text-align: center;
-    min-height: 500px;
+    min-height: 200px;
     padding:0 16px;
     margin-top: 50px;
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
+
+.section2 {
+    min-height: 100px;
+}
+
 .container2 {
     position: relative;
     text-align: center;
     background: white;
     padding: 40px;
-    margin-top: -100px;
+    margin-top: -100px;   
+    box-shadow: 0px 1px 5px rgba(0,0,0,.7);
+}
+
+.container3 {
+    position: relative;
+    text-align: center;
+    background: white;
+    padding: 40px;
+    margin-top: 50px;   
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
@@ -51,15 +65,15 @@ body {
 }
 
 .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        font-size: 3.5rem;
     }
 }

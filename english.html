@@ -27,6 +27,12 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="english.html">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -53,17 +59,25 @@
             <p><img src="pics/Gosia.jpg" alt="avatar" class="avatar"></p>   
         </div>
 
-        <section class="section bg-info"> 
+        <section class="section bg-info" id="aboutme"> 
             <div class="container">
                 <h5 class="card-header bg-info fontstyle">About me</h5>
-                <div class="card-body">
-                    <p class="card-text">Hello! My name is Malgorzata and I live in Malmö, Sweden. I am a future Java developer with a passion for computers, technology and the internet. My dream is to be a web developer. I am currently in my fourth semester of the Java Developer Program at <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> in Malmö and am applying for LIA (Learning at Work) - internship, where I as a student can further develop my newfound skills under the guidance of a supervisor. Within the framework of Java, I worked i.a. with APIs, databases, frameworks and Android development. I also completed courses in HTML, CSS and JavaScript, and I also gained experience with GitHub and agile methods.</p>
-                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">   
+                            <div class="card-body">
+                                <p class="card-text">Hello! My name is Malgorzata and I live in Malmö, Sweden. I am a future Java developer with a passion for computers, technology and the internet. My dream is to be a web developer. I am currently in my fourth semester of the Java Developer Program at <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> in Malmö and am applying for LIA (Learning at Work) - internship, where I as a student can further develop my newfound skills under the guidance of a supervisor. Within the framework of Java, I worked i.a. with APIs, databases, frameworks and Android development. I also completed courses in HTML, CSS and JavaScript, and I also gained experience with GitHub and agile methods.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
             </div>
+            <section class="section2 bg-info"></section>
         </section>
 
         <div class="container container2">
-            <div class="row">
+            <h5 class="card-header bg-info fontstyle">Skills</h5>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -119,6 +133,91 @@
                                 </ul>  
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="album py-5" id="portfolio">
+            <div class="container container3">
+                <h5 class="card-header bg-info fontstyle">Portfolio</h5>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="pics/MediaLibrary1.jpg" alt="media library" width="100%" height="100%"/>
+                            <div class="card-body">
+                                <p class="card-text">Refactoring Swing app to JavaFx app and testing in JUnit - school work</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://github.com/margareta75/Mediateket-fx" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary btn-info fontstyle">View on GitHub</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="pics/FlickrSearchAppMed.jpg" alt="flickr search app" width="100%" height="100%"/>
+                            <div class="card-body">
+                                <p class="card-text">React flickr app - school work at Advanced JavaScript Course.</p>
+                                <div class="d-flex justify-content-between align-items-center">                             
+                                    <a href="https://github.com/margareta75/react-flickr-app" target="_blank" type="button" class="btn btn-sm btn-outline-secondary btn-info fontstyle">View on GitHub</a>
+                                    <a href="https://margareta75.github.io/react-flickr-app/" target="_blank" type="button" class="btn btn-sm btn-outline-secondary btn-info fontstyle">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="pics/women-web-dev.png" alt="women web developer" width="100%" height="100%"/>
+                            <div class="card-body">
+                                <p class="card-text">Coming soon...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary btn-info fontstyle">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary btn-info fontstyle">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary btn-info fontstyle">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary btn-info fontstyle">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
                 </div>
             </div>
         </div>

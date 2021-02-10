@@ -15,10 +15,11 @@
         <script src="https://kit.fontawesome.com/3318035e44.js"></script>
     </head>
 
-    <body>    
+    <body>
+        <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light backgroundstyle">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo" width="60" height="60"/></a>
+                <a class="navbar-brand" href="index.html"><img src="pics/Logo.png" alt="logo" width="60" height="60"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,6 +34,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfölj</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Praktik</a>
+                        </li>                    
                         <li class="nav-item dropdown">
                             <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kontakt</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,44 +46,63 @@
                         </li>
                     </ul> 
                     <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Svenska</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="english.html">English</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Svenska</a></li>
+                                <li><a class="dropdown-item" href="english.html">English</a></li>
+                            </ul>
                         </li>
                     </ul> 
                 </div>
             </div>
         </nav>
-
-        <div class="text-center" id="home">
-            <p class="text-success fontstyle" style="font-size:45px">Junior Java Developer</p>
-            <p class="text-info fontstyle" style="font-size:35px">Malgorzata Pick</p>
-            <p><img src="pics/Gosia.jpg" alt="avatar" class="avatar"></p>   
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content border-info">
+              <div class="modal-header text-info">
+                <h5 class="modal-title fontstyle" id="exampleModalLabel">Praktik (LIA)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Just nu är jag inne på min fjärde termin i Javautvecklare-programmet på <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> i Malmö och söker LIA (Lärande i arbete) – praktikplats, där jag som student kan vidareutveckla mina nyvunna färdigheter under vägledning av en handledare. Inom ramen för Java jobbade jag bl.a. med API:er, databaser, ramverk och Androidutveckling. Jag slutade också kurser i HTML, CSS och JavaScript, samt fick jag också erfarenhet av GitHub och agila metoder. Jag är öppen för att arbeta hemifrån på grund av den pågående pandemin. Kontakta mig via LinkedIn eller kontaktformulär om du är intresserad!
+              </div>
+              <div class="modal-footer">
+                <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" type="button" class="btn btn-info btn-outline-secondary">LinkedIn Profil</a>
+                <a href="kontakt.html" type="button" class="btn btn-info btn-outline-secondary">Kontaktförmulär</a>
+                <button type="button" class="btn btn-info btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!-- Title section -->
+        <div class="text-center" id="title">
+            <p class="text-success fontstyle" style="font-size:45px">Junior Java Developer</p>
+            <p class="text-info fontstyle" style="font-size:25px">I design and code, and I love to do it.</p>
+            <p><img src="pics/Gosia.jpg" alt="avatar" class="avatar"></p>   
+        </div>
+        
+        <!-- About me section -->
         <section class="section bg-info" id="aboutme">      
             <div class="container">
                 <h5 class="card-header bg-info fontstyle">Om mig</h5>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3">                 
-                            <div class="card-body">
-                                <p class="card-text">Hej! Mitt namn är Malgorzata och jag bor i Malmö. 
-                                    Jag är blivande Javautvecklare med passion för datorer, teknik och internet. Mitt dröm är att vara webbutvecklare. Just nu är jag inne på min fjärde termin i Javautvecklare-programmet på <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> i Malmö och söker LIA (Lärande i arbete) – praktikplats, där jag som student kan vidareutveckla mina nyvunna färdigheter under vägledning av en handledare. Inom ramen för Java jobbade jag bl.a. med API:er, databaser, ramverk och Androidutveckling. Jag slutade också kurser i HTML, CSS och JavaScript, samt fick jag också erfarenhet av GitHub och agila metoder.
-                                </p>
-                            </div> 
-                        </div>
+                    <div class="row">                
+                        <div class="card-body">
+                            <p class="card-text container-about">Hej! Mitt namn är Malgorzata och jag bor i Malmö. Jag är blivande Javautvecklare med passion för datorer, teknik och internet. Mitt dröm är att vara webbutvecklare. Sedan jag jobbade som datorförsäljare i 6 år blev jag intresserad av datorer och är driven av att jobba vid datorn. Jag blev också intresserad av hur man skapar hemsidor och programvara och därför studerar jag till Javautvecklare. 
+                            </p>
+                        </div> 
                     </div> 
                 </div> 
             </div>             
             <section class="section2 bg-info"></section>
         </section>
-        
-  
 
-        <div class="container container2">
+        <!-- Competence section -->
+        <div class="container container-skills">
             <h5 class="card-header bg-info fontstyle">Kompetens</h5>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col-sm">
@@ -141,8 +164,9 @@
             </div>
         </div>
         
+        <!-- Portfolio section -->
         <div class="album py-5" id="portfolio">
-            <div class="container container3">
+            <div class="container container-portfolio">
                 <h5 class="card-header bg-info fontstyle">Portfölj</h5>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
@@ -225,8 +249,8 @@
                 </div>
             </div>
         </div>
-
         
+        <!-- Footer -->
         <footer>
             <div class="footer bg-info">
                 <h5 class="fontstyle">Kontakta mig: 

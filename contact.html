@@ -56,18 +56,19 @@
                         </li>
                     </ul>
                     <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="kontakt.html">Svenska</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">English</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="kontakt.html">Svenska</a></li>
+                                <li><a class="dropdown-item" href="contact.html">English</a></li>
+                            </ul>
                         </li>
                     </ul> 
                 </div>
             </div>
         </nav>
 
-        <div class="container bg-light" id="home">
+        <div class="container bg-light" id="form">
             <div class="row">
                 <div class="card mx-auto border-info" style="width: 30rem;">
                     <div class="card-body">
@@ -79,7 +80,7 @@
                             <input type="text" id="email" name="email" placeholder="name@example.com">
                             <label for="subject">Message</label>
                             <textarea id="subject" name="subject" placeholder="Write a message" style="height:200px"></textarea>
-                            <input type="submit" value="Send" class="btn btn-info fontstyle">
+                            <input type="submit" value="Send" class="btn btn-info btn-outline-secondary fontstyle">
                         </form>
                     </div>
                 </div>

@@ -16,9 +16,10 @@
     </head>
 
     <body>
+        <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light backgroundstyle">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo" width="60" height="60"/></a>
+                <a class="navbar-brand" href="index.html"><img src="pics/Logo.png" alt="logo" width="60" height="60"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,6 +34,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Practice</a>
+                        </li> 
                         <li class="nav-item dropdown">
                             <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,32 +46,53 @@
                         </li>
                     </ul> 
                     <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Svenska</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Svenska</a></li>
+                                <li><a class="dropdown-item" href="english.html">English</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="english.html">English</a>
-                        </li>
-                    </ul>
+                    </ul> 
                 </div>
             </div>
         </nav>
-
-        <div class="container text-center" id="home">
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content border-info">
+              <div class="modal-header text-info">
+                <h5 class="modal-title fontstyle" id="exampleModalLabel">Practice (LIA)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                I am currently in my fourth semester of the Java Developer Program at <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> in Malmö and am applying for LIA (Learning at Work) - internship, where I as a student can further develop my newfound skills under the guidance of a supervisor. Within the framework of Java, I worked i.a. with APIs, databases, frameworks and Android development. I also completed courses in HTML, CSS and JavaScript, and I also gained experience with GitHub and agile methods. I'm open to work from home due to the ongoing pandemic. Contact me via LinkedIn or contact form, if you are interrested!
+              </div>
+              <div class="modal-footer">
+                <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" type="button" class="btn btn-info btn-outline-secondary">LinkedIn Profil</a>
+                <a href="contact.html" type="button" class="btn btn-info btn-outline-secondary">Contact form</a>
+                <button type="button" class="btn btn-info btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Title section -->
+        <div class="container text-center" id="title">
             <p class="text-success fontstyle" style="font-size:45px">Junior Java Developer</p>
-            <p class="text-info fontstyle" style="font-size:35px">Malgorzata Pick</p>
+            <p class="text-info fontstyle" style="font-size:25px">I design and code, and I love to do it.</p>
             <p><img src="pics/Gosia.jpg" alt="avatar" class="avatar"></p>   
         </div>
-
+        
+        <!-- About me section -->
         <section class="section bg-info" id="aboutme"> 
             <div class="container">
                 <h5 class="card-header bg-info fontstyle">About me</h5>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3">   
-                            <div class="card-body">
-                                <p class="card-text">Hello! My name is Malgorzata and I live in Malmö, Sweden. I am a future Java developer with a passion for computers, technology and the internet. My dream is to be a web developer. I am currently in my fourth semester of the Java Developer Program at <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> in Malmö and am applying for LIA (Learning at Work) - internship, where I as a student can further develop my newfound skills under the guidance of a supervisor. Within the framework of Java, I worked i.a. with APIs, databases, frameworks and Android development. I also completed courses in HTML, CSS and JavaScript, and I also gained experience with GitHub and agile methods.</p>
-                            </div>
+                    <div class="row">  
+                        <div class="card-body">
+                            <p class="card-text container-about">Hello! I´m Malgorzata and I live in Malmö, Sweden. I am a future Java developer with a passion for computers, technology and the internet. My dream is to be a web developer. Since I worked as a computer salesman for 6 years, I became interested in computers and am driven by working at the computer. I also became interested in how to create websites and software and therefore I study to be a Java developer.</p>
                         </div>
                     </div> 
                 </div> 
@@ -75,7 +100,8 @@
             <section class="section2 bg-info"></section>
         </section>
 
-        <div class="container container2">
+        <!-- Competence section -->
+        <div class="container container-skills">
             <h5 class="card-header bg-info fontstyle">Skills</h5>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col-sm">
@@ -137,8 +163,9 @@
             </div>
         </div>
         
+        <!-- Portfolio section -->
         <div class="album py-5" id="portfolio">
-            <div class="container container3">
+            <div class="container container-portfolio">
                 <h5 class="card-header bg-info fontstyle">Portfolio</h5>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
@@ -221,7 +248,8 @@
                 </div>
             </div>
         </div>
-
+        
+        <!-- Footer -->
         <footer>
             <div class="footer bg-info">
                 <h5 class="fontstyle">Contact me: 

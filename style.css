@@ -3,6 +3,7 @@ body {
 }
 
 .avatar {
+    margin-top: 25px;
     border-radius: 50%;
     width:200px; 
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
@@ -24,7 +25,7 @@ body {
     min-height: 100px;
 }
 
-.container2 {
+.container-skills {
     position: relative;
     text-align: center;
     background: white;
@@ -33,13 +34,21 @@ body {
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
-.container3 {
+.container-portfolio {
     position: relative;
     text-align: center;
     background: white;
     padding: 40px;
-    margin-top: 50px;   
+    margin-top: 30px;   
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
+}
+
+.container-about {
+    text-align: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height:2;
 }
 
 .footer {
@@ -52,11 +61,11 @@ body {
     text-align: center;
     display: block;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 30px;
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
-#home {
+#title, #form {
     margin-top: 100px;
 }
 

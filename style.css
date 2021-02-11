@@ -1,5 +1,6 @@
 body {
     padding:0 16px;
+    background-color: #f7f7f7;
 }
 
 .avatar {
@@ -9,8 +10,12 @@ body {
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
-.fontstyle {
+.font-style {
     font-family: Quantico, Georgia, Helvetica, Sans-serif;
+}
+
+.background-style {
+    background: rgba(69, 183, 199, 0.4);
 }
 
 .section {
@@ -23,6 +28,26 @@ body {
 
 .section2 {
     min-height: 100px;
+}
+
+.section-title {
+  padding: 20px 0;
+  background: url("pics/code.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+}
+
+.section-form {
+  padding: 20px 0;
+  background: url("pics/office.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
 }
 
 .container-skills {
@@ -67,10 +92,6 @@ body {
 
 #title, #form {
     margin-top: 100px;
-}
-
-.backgroundstyle {
-    background: rgba(69, 183, 199, 0.4);
 }
 
 .bd-placeholder-img {

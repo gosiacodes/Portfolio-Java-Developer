@@ -15,7 +15,16 @@ body {
 }
 
 .background-style {
-    background: rgba(69, 183, 199, 0.4);
+    background: rgb(69, 183, 199);
+}
+
+.menu-nav a:hover {
+  background-color: darkturquoise;
+  color: white;
+}
+
+#title, #form {
+    margin-top: 100px;
 }
 
 .section {
@@ -50,7 +59,15 @@ body {
 
 }
 
-.container-skills {
+.container-about {
+    text-align: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height:2;
+}
+
+.container-portfolio {
     position: relative;
     text-align: center;
     background: white;
@@ -59,21 +76,13 @@ body {
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
-.container-portfolio {
+.container-skills {
     position: relative;
     text-align: center;
     background: white;
     padding: 40px;
     margin-top: 30px;   
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
-}
-
-.container-about {
-    text-align: center;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    line-height:2;
 }
 
 .footer {
@@ -88,10 +97,6 @@ body {
     overflow: hidden;
     margin-top: 30px;
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
-}
-
-#title, #form {
-    margin-top: 100px;
 }
 
 .bd-placeholder-img {

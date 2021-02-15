@@ -17,7 +17,7 @@
 
     <body class="bg-light">
         <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light background-style">
+        <nav class="menu-nav navbar navbar-expand-lg fixed-top navbar-light background-style">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="pics/Logo.png" alt="logo" width="60" height="60"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,13 +35,16 @@
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Intership</a>
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-LIA" href="#">Intership</a>
                         </li> 
                         <li class="nav-item dropdown">
                             <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/malgorzatapick/" target="_blank">LinkedIn Profile</a></li>
-                                <li><a class="dropdown-item" href="contact.html">Contact form</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal-contact">Contact form</a></li>
                             </ul>
                         </li>
                     </ul> 
@@ -58,27 +61,6 @@
             </div>
         </nav>
         
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content border-info">
-                    <div class="modal-header text-info">
-                        <h5 class="modal-title font-style" id="exampleModalLabel">Intership (LIA)</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        I am currently in my fourth semester of the Java Developer Program at <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> in Malmö and am applying for LIA (Learning at Work) - internship, where I as a student can further develop my newfound skills under the guidance of a supervisor. Within the framework of Java, I worked i.a. with APIs, databases, frameworks and Android development. I also completed courses in HTML, CSS and JavaScript, and I also gained experience with GitHub and agile methods. I'm open to work from home due to the ongoing pandemic. Contact me via LinkedIn or contact form, if you are interrested!
-                    </div>
-                    <div><img src="pics/java.png" alt="java" width="100%" height="auto"></div>
-                    <div class="modal-footer">
-                        <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" type="button" class="btn btn-info btn-outline-secondary font-style">LinkedIn Profil</a>
-                        <a href="contact.html" type="button" class="btn btn-info btn-outline-secondary font-style">Contact form</a>
-                        <button type="button" class="btn btn-info btn-outline-secondary font-style" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
         <!-- Title section -->        
         <section class="section-title text-center" id="title">
             <p class="text-success font-style" style="font-size:50px">Junior Java Developer</p>
@@ -87,7 +69,8 @@
         </section>
         
         <!-- About me section -->
-        <section class="section bg-info" id="aboutme"> 
+        <div id="aboutme"></div>
+        <section class="section bg-info"> 
             <div class="container">
                 <h5 class="card-header bg-info font-style">About me</h5>
                 <div class="container">
@@ -100,72 +83,9 @@
             </div>
             <section class="section2 bg-info"></section>
         </section>
-
-        <!-- Competence section -->
-        <div class="container container-skills">
-            <h5 class="card-header bg-info font-style">Skills</h5>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-header bg-info font-style">Courses I finished</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">HTML5 och CSS</li>
-                                    <li class="list-group-item">JavaScript with jQuery</li>
-                                    <li class="list-group-item">Java programming</li>
-                                    <li class="list-group-item">Web development with Java</li>
-                                    <li class="list-group-item">Java Web Services</li>
-                                    <li class="list-group-item">Mobile development with Java</li>
-                                    <li class="list-group-item">Databases and database design</li>
-                                    <li class="list-group-item">Advanced JavaScript</li>
-                                    <li class="list-group-item">Advanced Java programming</li>
-                                    <li class="list-group-item">Test driven development in Java</li>
-                                    <li class="list-group-item">The consulting role</li>
-                                    <li class="list-group-item">Project management</li>
-                                </ul>  
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-header bg-info font-style">Tools I used</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Bootstrap</li>
-                                    <li class="list-group-item">Spring</li>
-                                    <li class="list-group-item">Github</li>
-                                    <li class="list-group-item">Codepen</li>
-                                    <li class="list-group-item">Codeshare</li>
-                                    <li class="list-group-item">Java Web-services</li>
-                                    <li class="list-group-item">Eclipse</li>
-                                    <li class="list-group-item">Brackets</li>
-                                    <li class="list-group-item">Visual Studio Code</li>
-                                    <li class="list-group-item">Android Studio</li>
-                                    <li class="list-group-item">NetBeans</li>
-                                    <li class="list-group-item">Postman</li>
-                                </ul>  
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-header bg-info font-style">Languages I speak</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">HTML5</li>
-                                    <li class="list-group-item">CSS</li>
-                                    <li class="list-group-item">JavaScript</li>
-                                    <li class="list-group-item">Java</li>
-                                    <li class="list-group-item">Java FX</li>
-                                </ul>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         
         <!-- Portfolio section -->
-        <div class="album py-5" id="portfolio">
+        <div class="album" id="portfolio">
             <div class="container container-portfolio">
                 <h5 class="card-header bg-info font-style">Portfolio</h5>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -173,10 +93,10 @@
                         <div class="card shadow-sm">
                             <img src="pics/MediaLibrary1.jpg" alt="media library" width="100%" height="250"/>
                             <div class="card-body">
-                                <p class="card-text">Refactoring Swing app to JavaFx app and testing in JUnit - school work</p>
+                                <p class="card-text">"Media Library" app - refactoring Swing app to JavaFx app and testing in JUnit - school project at Test driven development in Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="https://github.com/margareta75/Mediateket-fx" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary btn-info font-style">View on GitHub</button></a>
-                                    <a href="pics/MediaLibrary1.jpg" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style">View</a>
+                                    <a href="#" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style" data-bs-toggle="modal" data-bs-target="#modal-media">View</a>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +105,7 @@
                         <div class="card shadow-sm">
                             <img src="pics/FlickrSearchAppMed.jpg" alt="flickr search app" width="100%" height="250"/>
                             <div class="card-body">
-                                <p class="card-text">React flickr app - school work at Advanced JavaScript Course.</p>
+                                <p class="card-text">"React Flickr" app - searching pictures via Flickr’s API - school project at Advanced JavaScript course.</p>
                                 <div class="d-flex justify-content-between align-items-center">                             
                                     <a href="https://github.com/margareta75/react-flickr-app" target="_blank" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style">View on GitHub</a>
                                     <a href="https://margareta75.github.io/react-flickr-app/" target="_blank" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style">View</a>
@@ -197,23 +117,22 @@
                         <div class="card shadow-sm">
                             <img src="pics/Hangman_bg.jpg" alt="hangman app" width="auto" height="250" />
                             <div class="card-body">
-                                <p class="card-text">Hangman game for Android - school project at Mobile development with Java Course.</p>
+                                <p class="card-text">Android app "Hangman Game" with timer - school project at Mobile development with Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                         <a href="https://github.com/margareta75/Hangman" target="_blank" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style">View on GitHub</a>
-                                        <a href="pics/Hangman.jpg" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style">View</a>
+                                        <a href="#" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style" data-bs-toggle="modal" data-bs-target="#modal-hangman">View</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                            <img src="pics/ChatBlue_bg.jpg" alt="chat blue app" width="auto" height="250" />
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">Android firebase app "Chat Blue" with login and chat funktion - school project at Mobile development with Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn-info font-style">View</button>
-                                    </div>
+                                    <a href="https://github.com/margareta75/FirebaseApp" target="_blank" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style">View on GitHub</a>
+                                    <a href="#" type="button" class="btn btn-sm btn-outline-secondary btn-info font-style" data-bs-toggle="modal" data-bs-target="#modal-chatblue">View</a>
                                 </div>
                             </div>
                         </div>
@@ -244,6 +163,176 @@
                             </div>
                         </div>
                     </div>         
+                </div>
+            </div>
+        </div>
+
+        <!-- Competence section -->
+        <div class="album py-5" id="skills">
+            <div class="container container-skills">
+                <h5 class="card-header bg-info font-style">Skills</h5>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-header bg-info font-style">Courses I finished</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">HTML5 och CSS</li>
+                                        <li class="list-group-item">JavaScript with jQuery</li>
+                                        <li class="list-group-item">Java programming</li>
+                                        <li class="list-group-item">Web development with Java</li>
+                                        <li class="list-group-item">Java Web Services</li>
+                                        <li class="list-group-item">Mobile development with Java</li>
+                                        <li class="list-group-item">Databases and database design</li>
+                                        <li class="list-group-item">Advanced JavaScript</li>
+                                        <li class="list-group-item">Advanced Java programming</li>
+                                        <li class="list-group-item">Test driven development in Java</li>
+                                        <li class="list-group-item">The consulting role</li>
+                                        <li class="list-group-item">Project management</li>
+                                    </ul>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-header bg-info font-style">Tools I used</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Bootstrap</li>
+                                        <li class="list-group-item">Spring</li>
+                                        <li class="list-group-item">Github</li>
+                                        <li class="list-group-item">Codepen</li>
+                                        <li class="list-group-item">Codeshare</li>
+                                        <li class="list-group-item">Java Web-services</li>
+                                        <li class="list-group-item">Eclipse</li>
+                                        <li class="list-group-item">Brackets</li>
+                                        <li class="list-group-item">Visual Studio Code</li>
+                                        <li class="list-group-item">Android Studio</li>
+                                        <li class="list-group-item">NetBeans</li>
+                                        <li class="list-group-item">Postman</li>
+                                    </ul>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-header bg-info font-style">Languages I speak</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">HTML5</li>
+                                        <li class="list-group-item">CSS</li>
+                                        <li class="list-group-item">JavaScript</li>
+                                        <li class="list-group-item">Java</li>
+                                        <li class="list-group-item">Java FX</li>
+                                    </ul>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal contact form section -->
+        <div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="modal-contact-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content border-info">
+                    <div class="modal-header text-info">
+                        <h5 class="modal-title font-style" id="modal-contact-label">Contact me</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <section class="section-form">
+                    <div class="modal-body">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="col-form-label">Name</label>
+                                    <input class="form-control" type="text" name="name" id="name" placeholder="Your name">
+                                </div>
+                                    <div class="mb-3">
+                                    <label for="email" class="col-form-label">E-mail</label>
+                                    <input class="form-control" type="text" name="email" id="email" placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message</label>
+                                    <textarea class="form-control" id="message-text" placeholder="Write a message" style="height:200px"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </section>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info btn-outline-secondary font-style">Send message</button>
+                        <button type="button" class="btn btn-info btn-outline-secondary font-style" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal LIA section -->
+        <div class="modal fade" id="modal-LIA" tabindex="-1" aria-labelledby="modal-LIA-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content border-info">
+                    <div class="modal-header text-info">
+                        <h5 class="modal-title font-style" id="modal-LIA-label">Intership (LIA)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        I am currently in my fourth semester of the Java Developer Program at <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> in Malmö and am applying for LIA (Learning at Work) - internship, where I as a student can further develop my newfound skills under the guidance of a supervisor. Within the framework of Java, I worked i.a. with APIs, databases, frameworks and Android development. I also completed courses in HTML, CSS and JavaScript, and I also gained experience with GitHub and agile methods. I'm open to work from home due to the ongoing pandemic. Contact me via LinkedIn or contact form, if you are interrested!
+                    </div>
+                    <div><img src="pics/java.png" alt="java" width="100%" height="auto"></div>
+                    <div class="modal-footer">
+                        <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" type="button" class="btn btn-info btn-outline-secondary font-style">LinkedIn Profil</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-contact" data-bs-dismiss="modal" type="button" class="btn btn-info btn-outline-secondary font-style">Contact form</a>
+                        <button type="button" class="btn btn-info btn-outline-secondary font-style" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal media library picture section -->
+        <div class="modal fade" id="modal-media" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content border-info">
+                    <div class="modal-header text-info">
+                        <h5 class="modal-title font-style" id="modal-media-label">Media Library Login Page</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div><img src="pics/MediaLibrary1.jpg" alt="java" width="100%" height="auto"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info btn-outline-secondary font-style" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal hangman picture section -->
+        <div class="modal fade" id="modal-hangman" tabindex="-1" aria-labelledby="modal-hangman-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content border-info">
+                    <div class="modal-header text-info">
+                        <h5 class="modal-title font-style" id="modal-hangman-label">Hangman app with timer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div><img src="pics/Hangman.jpg" alt="java" width="100%" height="auto"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info btn-outline-secondary font-style" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal hangman picture section -->
+        <div class="modal fade" id="modal-chatblue" tabindex="-1" aria-labelledby="modal-chatblue-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content border-info">
+                    <div class="modal-header text-info">
+                        <h5 class="modal-title font-style" id="modal-chatblue-label">Chat Blue app with login function</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div><img src="pics/ChatBlue.jpg" alt="java" width="100%" height="auto"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info btn-outline-secondary font-style" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>

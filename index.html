@@ -15,9 +15,9 @@
         <script src="https://kit.fontawesome.com/3318035e44.js"></script>
     </head>
 
-    <body class="bg-light">
+    <body onload="typeWriter()" class="bg-light">
         <!-- Navigation bar -->
-        <nav class="menu-nav navbar navbar-expand-lg fixed-top background-style">
+        <nav class="menu-nav navbar navbar-expand-lg fixed-top navbar-light background-style">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="pics/Logo.png" alt="logo" width="60" height="60"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,19 +64,19 @@
         <!-- Title section -->    
         <section class="section-title text-center" id="title">
             <p class="text-success font-style" style="font-size:50px">Junior Java Developer</p>
-            <p class="text-primary font-style" style="font-size:25px">I design and code, and I love doing it.</p>
+            <p class="text-primary font-style" style="font-size:25px" id="write-text">I</p>
+            <div id="aboutme"></div>
             <p><img src="pics/Gosia.jpg" alt="avatar" class="avatar"></p>                
         </section>
         
-        <!-- About me section -->
-        <div id="aboutme"></div>
+        <!-- About me section -->        
         <section class="section bg-info">      
             <div class="container">
                 <h5 class="card-header bg-info font-style">Om mig</h5>
                 <div class="container">
                     <div class="row">                
                         <div class="card-body">
-                            <p class="card-text container-about">Hej! Mitt namn är Malgorzata och jag bor i Malmö. Jag är blivande Javautvecklare med passion för datorer, teknik och internet. Mitt dröm är att vara webbutvecklare. Sedan jag jobbade som datorförsäljare i 6 år blev jag intresserad av datorer och är driven av att jobba vid datorn. Jag blev också intresserad av hur man skapar hemsidor och programvara och därför studerar jag till Javautvecklare. Just nu söker jag <a data-bs-toggle="modal" data-bs-target="#modal-LIA" href="#">praktikplats</a>. Jag vill utvecklas!
+                            <p class="card-text container-about">Hej! Mitt namn är Gosia och jag bor i Malmö. Jag är blivande Javautvecklare med passion för datorer, teknik och internet. Mitt dröm är att vara webbutvecklare. Sedan jag jobbade som datorförsäljare i 6 år blev jag intresserad av datorer och är driven av att jobba vid datorn. Jag blev också intresserad av hur man skapar hemsidor och programvara och därför studerar jag till Javautvecklare. Just nu söker jag <a data-bs-toggle="modal" data-bs-target="#modal-LIA" href="#">praktikplats</a>. Jag vill utvecklas!
                             </p>
                         </div> 
                     </div> 
@@ -354,16 +354,18 @@
         
         <!-- Footer -->
         <footer>
-            <div class="footer bg-info contact">
-                    <h5 class="font-style">Kontakta mig: 
-                    <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#modal-contact"><i class="fas fa-envelope-square"></i></a>
-                    </h5>
+            <div class="footer bg-info">
+                <p class="social" style="font-size:25px">
+                    <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-contact"><i class="fas fa-envelope-square"></i></a>
+                    <a href="https://github.com/margareta75" target="_blank"><i class="fab fa-github-square"></i></a>
+                </p>
                 <p><center>Copyright &copy; 2021 | Malgorzata Pick | Junior Javautvecklare</center></p>
             </div>
         </footer>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>      
+        <script src="script.js"></script>
 
     </body>
 </html>

@@ -15,9 +15,9 @@
         <script src="https://kit.fontawesome.com/3318035e44.js"></script>
     </head>
 
-    <body class="bg-light">
+    <body onload="typeWriter()" class="bg-light">
         <!-- Navigation bar -->
-        <nav class="menu-nav navbar navbar-expand-lg fixed-top background-style">
+        <nav class="menu-nav navbar navbar-expand-lg fixed-top navbar-light background-style">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="pics/Logo.png" alt="logo" width="60" height="60"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,19 +64,19 @@
         <!-- Title section -->        
         <section class="section-title text-center" id="title">
             <p class="text-success font-style" style="font-size:50px">Junior Java Developer</p>
-            <p class="text-primary font-style" style="font-size:25px">I design and code, and I love doing it.</p>
+            <p class="text-primary font-style" style="font-size:25px" id="write-text">I</p>
+            <div id="aboutme"></div>
             <p><img src="pics/Gosia.jpg" alt="avatar" class="avatar"></p>                
         </section>
         
         <!-- About me section -->
-        <div id="aboutme"></div>
         <section class="section bg-info"> 
             <div class="container">
                 <h5 class="card-header bg-info font-style">About me</h5>
                 <div class="container">
                     <div class="row">  
                         <div class="card-body">
-                            <p class="card-text container-about">Hello! My name is Malgorzata and I live in Malmö, Sweden. I am a future Java developer with a passion for computers, technology and the internet. My dream is to be a web developer. Since I worked as a computer salesman for 6 years, I became interested in computers and am driven by working at the computer. I also became interested in how to create websites and software and therefore I study to be a Java developer. Right now I am looking for an <a data-bs-toggle="modal" data-bs-target="#modal-LIA" href="#">intership</a>. I want to develop myself!</p>
+                            <p class="card-text container-about">Hello! My name is Gosia and I live in Malmö, Sweden. I am a future Java developer with a passion for computers, technology and the internet. My dream is to be a web developer. Since I worked as a computer salesman for 6 years, I became interested in computers and am driven by working at the computer. I also became interested in how to create websites and software and therefore I study to be a Java developer. Right now I am looking for an <a data-bs-toggle="modal" data-bs-target="#modal-LIA" href="#">intership</a>. I want to develop myself!</p>
                         </div>
                     </div> 
                 </div> 
@@ -91,7 +91,7 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/MediaLibrary1.jpg" alt="media library" width="100%" height="250"/>
+                            <img src="pics/MediaLibrary1.jpg" alt="Media Library app" width="100%" height="250"/>
                             <div class="card-body">
                                 <p class="card-text">"Media Library" app - refactoring Swing app to JavaFx app and testing in JUnit - school project at Test driven development in Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -103,7 +103,7 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/ChatBlue_bg.jpg" alt="chat blue app" width="100%" height="250" />
+                            <img src="pics/ChatBlue_bg.jpg" alt="Chat Blue app" width="100%" height="250" />
                             <div class="card-body">
                                 <p class="card-text">Android firebase app "Chat Blue" with login and chat funktion - school project at Mobile development with Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -127,7 +127,7 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/FlickrSearchAppMed.jpg" alt="flickr search app" width="100%" height="250"/>
+                            <img src="pics/FlickrSearchAppMed.jpg" alt="Flickr Search app" width="100%" height="250"/>
                             <div class="card-body">
                                 <p class="card-text">"React Flickr" app - searching pictures via Flickr’s API - school project at Advanced JavaScript course.</p>
                                 <div class="d-flex justify-content-between align-items-center">                             
@@ -139,7 +139,7 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/Hangman_bg.jpg" alt="hangman app" width="100%" height="250" />
+                            <img src="pics/Hangman_bg.jpg" alt="Hangman app" width="100%" height="250" />
                             <div class="card-body">
                                 <p class="card-text">Android app "Hangman Game" with timer - school project at Mobile development with Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -353,16 +353,18 @@
         
         <!-- Footer -->
         <footer>
-            <div class="footer bg-info">
-                <h5 class="font-style">Contact me: 
-                    <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#modal-contact"><i class="fas fa-envelope-square"></i></a>
-                </h5>
+           <div class="footer bg-info">
+                <p class="social" style="font-size:25px">
+                    <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-contact"><i class="fas fa-envelope-square"></i></a>
+                    <a href="https://github.com/margareta75" target="_blank"><i class="fab fa-github-square"></i></a>
+                </p>
                 <p><center>Copyright &copy; 2021 | Malgorzata Pick | Junior Java Developer</center></p>
             </div>
         </footer>
 
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
 
     </body>
 </html>

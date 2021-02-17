@@ -1,5 +1,4 @@
 body {
-    padding:0 16px;
     background-color: #f7f7f7;
 }
 
@@ -8,6 +7,10 @@ body {
     border-radius: 50%;
     width:200px; 
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
+}
+
+.avatar:hover  {
+    opacity: 0.8;
 }
 
 .font-style {
@@ -31,7 +34,6 @@ body {
     text-align: center;
     min-height: 200px;
     padding:0 16px;
-    margin-top: 50px;
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
@@ -40,23 +42,20 @@ body {
 }
 
 .section-title {
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 20px 0;
-    background: url("pics/code.jpg");
+    background-image: url("pics/code.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-size: cover;
 }
 
 .section-form {
-  padding: 20px 0;
-  background: url("pics/office.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-
+    padding: 20px 0;
+    background: url("pics/office.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container-about {
@@ -80,8 +79,7 @@ body {
     position: relative;
     text-align: center;
     background: white;
-    padding: 40px;
-    margin-top: 30px;   
+    padding: 40px;     
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
@@ -95,24 +93,15 @@ body {
     text-align: center;
     display: block;
     overflow: hidden;
-    margin-top: 30px;
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
-
-.contact a:hover {
-  opacity: 0.6;
+.social {
+    word-spacing: 20px;
 }
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+.social a{
+    color: white;
 }
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
+.social a:hover {
+    color: darkslategray;
+    opacity: 0.8;
 }

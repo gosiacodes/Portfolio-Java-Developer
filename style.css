@@ -1,5 +1,6 @@
 body {
     background-color: #f7f7f7;
+    font-family: Tahoma, Helvetica, Verdana, Arial, sans-serif;
 }
 
 .avatar {
@@ -9,12 +10,16 @@ body {
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
-.avatar:hover  {
+.avatar:hover {
     opacity: 0.8;
 }
 
 .font-style {
-    font-family: Quantico, Georgia, Helvetica, Sans-serif;
+    font-family: Quantico, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+}
+
+.font-white {
+    color: white;
 }
 
 .background-style {
@@ -50,6 +55,14 @@ body {
     background-size: cover;
 }
 
+#text-title {
+    font-size:50px;
+}
+
+#write-text {
+    font-size:25px;
+}
+
 .section-form {
     padding: 20px 0;
     background: url("pics/office.jpg");
@@ -63,7 +76,8 @@ body {
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    line-height:2;
+    line-height: 2;
+    font-size: 18px;
 }
 
 .container-portfolio {
@@ -83,6 +97,16 @@ body {
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
+.image-portfolio {
+    width: 100%; 
+    height: 250px;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
 .footer {
     position: relative;
     padding:30px;
@@ -95,6 +119,7 @@ body {
     overflow: hidden;
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
+
 .social {
     word-spacing: 20px;
 }
@@ -104,4 +129,22 @@ body {
 .social a:hover {
     color: darkslategray;
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+    .avatar {
+        width:100px; 
+    }
+    #text-title {
+        font-size: 30px;
+    }
+    #write-text {
+        font-size: 20px;
+    }
+    .container-about {
+        padding: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 15px;
+    }
 }

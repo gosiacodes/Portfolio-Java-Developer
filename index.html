@@ -7,7 +7,8 @@
         <meta name="keywords" content="Portfolio, Java Developer, javautvecklare, javaprogrammering, HTML, CSS, Java, Malgorzata Pick">
         <meta name="author" content="Malgorzata Pick">
         <title>Malgorzata Pick | Java Developer</title>
-        <link rel="icon" href="pics/Logo.gif" type="image/gif" sizes="16x16">
+        <link rel="icon" href="pics/logo.gif" type="image/gif" sizes="16x16">
+        <!-- CSS --> 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,10 +18,10 @@
 
     <body onload="typeWriter()" class="bg-light">
         <!-- Navigation bar -->
-        <nav class="menu-nav navbar navbar-expand-lg fixed-top navbar-light background-style">
+        <nav class="menu-nav navbar navbar-expand-lg fixed-top background-style">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="pics/Logo.png" alt="logo" width="60" height="60"/></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo" width="60" height="60"/></a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
@@ -63,8 +64,8 @@
 
         <!-- Title section -->    
         <section class="section-title text-center" id="title">
-            <p class="text-success font-style" style="font-size:50px">Junior Java Developer</p>
-            <p class="text-primary font-style" style="font-size:25px" id="write-text">I</p>
+            <p class="text-success font-style" id="text-title">Junior Java Developer</p>
+            <p class="text-primary font-style" id="write-text">I</p>
             <div id="aboutme"></div>
             <p><img src="pics/Gosia.jpg" alt="avatar" class="avatar"></p>                
         </section>
@@ -72,12 +73,11 @@
         <!-- About me section -->        
         <section class="section bg-info">      
             <div class="container">
-                <h5 class="card-header bg-info font-style">Om mig</h5>
+                <h5 class="card-header bg-info font-style font-white">Om mig</h5>
                 <div class="container">
                     <div class="row">                
                         <div class="card-body">
-                            <p class="card-text container-about">Hej! Mitt namn är Gosia och jag bor i Malmö. Jag är blivande Javautvecklare med passion för datorer, teknik och internet. Mitt dröm är att vara webbutvecklare. Sedan jag jobbade som datorförsäljare i 6 år blev jag intresserad av datorer och är driven av att jobba vid datorn. Jag blev också intresserad av hur man skapar hemsidor och programvara och därför studerar jag till Javautvecklare. Just nu söker jag <a data-bs-toggle="modal" data-bs-target="#modal-LIA" href="#">praktikplats</a>. Jag vill utvecklas!
-                            </p>
+                            <p class="card-text container-about font-white">Hej! Mitt namn är Gosia och jag bor i Malmö. Jag är blivande Javautvecklare med passion för datorer, teknik och internet. Mitt dröm är att vara webbutvecklare. Sedan jag jobbade som datorförsäljare i 6 år blev jag intresserad av datorer och är driven av att jobba vid datorn. Jag blev också intresserad av hur man skapar hemsidor och programvara och därför studerar jag till Javautvecklare. Just nu söker jag <a data-bs-toggle="modal" data-bs-target="#modal-LIA" href="#">praktikplats</a>. Jag vill utvecklas!</p>
                         </div> 
                     </div> 
                 </div> 
@@ -88,11 +88,11 @@
         <!-- Portfolio section -->
         <div class="album" id="portfolio">
             <div class="container container-portfolio">
-                <h5 class="card-header bg-info font-style">Portfölj</h5>
+                <h5 class="card-header bg-info font-style font-white">Portfölj</h5>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/MediaLibrary1.jpg" alt="Media Library app" width="100%" height="250"/>
+                            <img src="pics/MediaLibrary1.jpg" alt="Media Library app" class="image-portfolio responsive"/>
                             <div class="card-body">
                                 <p class="card-text">"Media Library" app - refactoring Swing app to JavaFx app and testing in JUnit - school project at Test driven development in Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -104,7 +104,7 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/ChatBlue_bg.jpg" alt="Chat Blue app" width="100%" height="250" />
+                            <img src="pics/ChatBlue_bg.jpg" alt="Chat Blue app" class="image-portfolio responsive"/>
                             <div class="card-body">
                                 <p class="card-text">Android firebase app "Chat Blue" with login and chat funktion - school project at Mobile development with Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -116,7 +116,7 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/GAAP.jpg" alt="GAAP Airlines" width="100%" height="250" />
+                            <img src="pics/GAAP.jpg" alt="GAAP Airlines" class="image-portfolio responsive"/>
                             <div class="card-body">
                                 <p class="card-text">Homepage design "GAAP Airlines" - group project at HTML5 & CSS course. I designed index.html (except the booking form) and plantravel.html</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -128,7 +128,7 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/FlickrSearchAppMed.jpg" alt="Flickr Search app" width="100%" height="250"/>
+                            <img src="pics/FlickrSearchAppMed.jpg" alt="Flickr Search app" class="image-portfolio responsive"/>
                             <div class="card-body">
                                 <p class="card-text">"React Flickr" app - searching pictures via Flickr’s API - school project at Advanced JavaScript course.</p>
                                 <div class="d-flex justify-content-between align-items-center">                             
@@ -140,7 +140,7 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/Hangman_bg.jpg" alt="Hangman app" width="100%" height="250" />
+                            <img src="pics/Hangman_bg.jpg" alt="Hangman app" class="image-portfolio responsive"/>
                             <div class="card-body">
                                 <p class="card-text">Android app "Hangman Game" with timer - school project at Mobile development with Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -152,7 +152,7 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="pics/Santa1_bg.png" alt="Santa audio player" width="100%" height="250" />
+                            <img src="pics/Santa1_bg.png" alt="Santa audio player" class="image-portfolio responsive"/>
                             <div class="card-body">
                                 <p class="card-text">Java Swing audio player "Message from Santa Claus" - school work at Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -169,12 +169,12 @@
         <!-- Competence section -->
         <div class="album py-5" id="skills">
             <div class="container container-skills">
-                <h5 class="card-header bg-info font-style">Kompetens</h5>
+                <h5 class="card-header bg-info font-style font-white">Kompetens</h5>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col-sm">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-header bg-info font-style">Kurser</h5>
+                                <h5 class="card-header bg-info font-style font-white">Kurser</h5>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">HTML5 och CSS</li>
                                     <li class="list-group-item">JavaScript med jQuery</li>
@@ -195,7 +195,7 @@
                     <div class="col-sm">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-header bg-info font-style">Verktyg</h5>
+                                <h5 class="card-header bg-info font-style font-white">Verktyg</h5>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">Bootstrap</li>
                                     <li class="list-group-item">Spring</li>
@@ -216,7 +216,7 @@
                     <div class="col-sm">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-header bg-info font-style">Programmeringsspråk</h5>
+                                <h5 class="card-header bg-info font-style font-white">Programmeringsspråk</h5>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">HTML5</li>
                                     <li class="list-group-item">CSS</li>

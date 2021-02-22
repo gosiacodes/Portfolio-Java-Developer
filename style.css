@@ -3,6 +3,10 @@ body {
     font-family: Tahoma, Helvetica, Verdana, Arial, sans-serif;
 }
 
+div {
+    display: block;
+}
+
 .avatar {
     margin-top: 25px;
     border-radius: 50%;
@@ -22,16 +26,39 @@ body {
     color: white;
 }
 
-.background-style {
-    background: rgb(69, 183, 199);
+.font-darkblue {
+    color: #1B21A8;
+}
+
+.font-white a:hover {
+    color: #C3F50F;
+}
+
+.background-style-menu {
+    background: #FF0355;
+}
+
+.background-style-sections {
+    background: #1B21A8;
+}
+
+.button-style {
+    background-color: #1B21A8;
+    color: white;
+}
+
+.button-style:hover {
+    background-color: #C3F50F;
+    color: #1B21A8;
 }
 
 .menu-nav a {
-    color: black;
+    color: #1B21A8;
+    font-size: 18px;
 }
 
 .menu-nav a:hover {
-  background-color: darkturquoise;
+  background-color: #1B24A8;
   color: white;
 }
 
@@ -55,11 +82,13 @@ body {
 }
 
 #text-title {
-    font-size:50px;
+    font-size: 50px;
+    color: #A81944;
 }
 
 #write-text {
-    font-size:25px;
+    font-size: 25px;
+    color: #1B29F5;
 }
 
 .section-form {
@@ -98,7 +127,7 @@ body {
 
 .image-portfolio {
     width: 100%; 
-    height: 250px;
+    max-height: 250px;
 }
 
 .responsive {
@@ -108,10 +137,9 @@ body {
 
 .footer {
     position: relative;
-    padding:30px;
-    bottom: 0;
+    padding: 10px;
     width: 100%;
-    height: 150px;
+    height: 100px;
     color: white;
     text-align: center;
     display: block;
@@ -122,12 +150,11 @@ body {
 .social {
     word-spacing: 20px;
 }
-.social a{
+.social a {
     color: white;
 }
 .social a:hover {
-    color: darkslategray;
-    opacity: 0.8;
+    color: #C3F50F;
 }
 
 @media only screen and (max-width: 768px) {
@@ -144,6 +171,14 @@ body {
         padding: 10px;
         padding-left: 0px;
         padding-right: 0px;
-        font-size: 15px;
+        font-size: 16px;
     }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
 }

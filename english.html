@@ -3,24 +3,25 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio">
+        <meta name="description" content="Malgorzata Pick | Portfolio | Junior Java Developer | Malmö, Sweden">
         <meta name="keywords" content="Portfolio, Java Developer, javautvecklare, javaprogrammering, HTML, CSS, Java, Malgorzata Pick">
         <meta name="author" content="Malgorzata Pick">
         <title>Malgorzata Pick | Java Developer</title>
-        <link rel="icon" href="pics/logo_blue.gif" type="image/gif" sizes="16x16">
+        <link rel="icon" href="pics/logo_1.png" type="image/jpg" sizes="16x16">
         <!-- CSS --> 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico&family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3318035e44.js"></script>
     </head>
 
-    <body onload="typeWriter()" class="bg-light">
+    <body onload="typeWriter()">
+        
         <!-- Navigation bar -->
-        <nav class="menu-nav navbar navbar-expand-lg fixed-top background-style-menu sticky-top">
+        <nav class="menu-nav navbar navbar-expand-lg fixed-top background-style-menu sticky-top font-style" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="pics/logo_blue.png" alt="logo" width="50" height="50"/></a>
+                <a class="navbar-brand logo" href="english.html"><img src="pics/logo_mp.png" alt="logo" width="100" height="48"></a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +31,7 @@
                             <a class="nav-link " href="english.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#aboutme">About me</a>
+                            <a class="nav-link" href="#aboutme">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -43,42 +44,37 @@
                         </li> 
                         <li class="nav-item dropdown">
                             <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu background-style-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/malgorzatapick/" target="_blank">LinkedIn Profile</a></li>
                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal-contact">Contact form</a></li>
                             </ul>
                         </li>
                     </ul> 
                     <ul class="nav justify-content-end">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="index.html">Svenska</a></li>
-                                <li><a class="dropdown-item" href="english.html">English</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Svenska</a></li>
                     </ul> 
                 </div>
             </div>
         </nav>
+        <!-- End #menu -->
         
         <!-- Title section -->        
         <section class="section-title text-center" id="title">
             <p class="font-style" id="text-title">Junior Java Developer</p>
-            <p class="font-style" id="write-text">I</p>
-            
-            <p><img src="pics/Gosia.jpg" alt="avatar" class="avatar"></p>                
+            <p class="font-style" id="write-text">I</p>           
+            <p><img src="pics/women-web-developer-3.svg" alt="avatar" class="avatar"></p>                
         </section>
+        <!-- End #title -->
         
         <!-- About me section -->
         <div id="aboutme">
             <section class="section background-style-sections"> 
-                <div class="container">
-                    <h5 class="card-header background-style-sections-2 font-style font-white">About me</h5>
-                    <div class="container">
+                <div class="container">                  
+                    <div class="container-about">
                         <div class="row">  
-                            <div class="card-body">
-                                <p class="card-text container-about font-white">Hello! My name is Gosia and I live in Malmö, Sweden. I am a future Java developer with a passion for computers, technology and the internet. My dream is to be a web developer. Since I worked as a computer salesman for 6 years, I became interested in computers and am driven by working at the computer. I also became interested in how to create websites and software and therefore I study to be a Java developer. Right now I am looking for an <a href="#" data-bs-toggle="modal" data-bs-target="#modal-LIA" class="font-white">intership</a>. I want to develop myself!</p>
+                            <div class="card-body font-darkblue">
+                                <h2 class="font-style">Hi, I'm Gosia.</h2>
+                                <p class="card-text text-align-justify">I am a future Java developer with a passion for computers, technology and the internet, based in Malmö, Sweden. My dream is to be a web developer. Since I worked as a computer salesman for 6 years, I became interested in computers and am driven by working at the computer. I also became interested in how to create websites and software and therefore I study to be a Java developer. Right now I am looking for an <a href="#" data-bs-toggle="modal" data-bs-target="#modal-LIA" class="font-darkblue">intership</a>. I want to develop myself!</p>
                             </div>
                         </div> 
                     </div> 
@@ -90,16 +86,16 @@
         <!-- Portfolio section -->
         <div class="album" id="portfolio">
             <div class="container container-portfolio">
-                <h5 class="card-header background-style-sections font-style font-white">Portfolio</h5>
+                <h5 class="card-header background-style-headers font-style font-white mb-3">Portfolio</h5>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="pics/MediaLibrary1_bg.png" alt="Media Library app" class="image-portfolio responsive"/>
-                            <div class="card-body">
+                            <div class="card-body background-style">
                                 <p class="card-text">"Media Library" app - refactoring Swing app to JavaFx app and testing in JUnit - school project at Test driven development in Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="https://github.com/margareta75/Mediateket-fx" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
-                                    <a href="#" type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-media">View</a>
+                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-media">View</button></a>
                                 </div>
                             </div>
                         </div>
@@ -107,11 +103,11 @@
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="pics/ChatBlue_bg.jpg" alt="Chat Blue app" class="image-portfolio responsive"/>
-                            <div class="card-body">
+                            <div class="card-body background-style">
                                 <p class="card-text">Android firebase app "Chat Blue" with login and chat feature - school project at Mobile development with Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/FirebaseApp" target="_blank" type="button" class="btn btn-sm font-style button-style">View on GitHub</a>
-                                    <a href="#" type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-chatblue">View</a>
+                                    <a href="https://github.com/margareta75/FirebaseApp" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
+                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-chatblue">View</button></a>
                                 </div>
                             </div>
                         </div>
@@ -119,11 +115,11 @@
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="pics/GAAP_bg.png" alt="GAAP Airlines" class="image-portfolio responsive"/>
-                            <div class="card-body">
-                                <p class="card-text">Homepage design "GAAP Airlines" - group project at HTML5 & CSS course. I designed index.html (except the booking form) and plantravel.html</p>
+                            <div class="card-body background-style">
+                                <p class="card-text">Website design "GAAP Airlines" - group project at HTML5 and CSS course. I designed index.html (except the booking form) and plantravel.html</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/HTML-Kravspec" target="_blank" type="button" class="btn btn-sm font-style button-style">View on GitHub</a>
-                                    <a href="https://margareta75.github.io/HTML-Kravspec" target="_blank" type="button" class="btn btn-sm font-style button-style">View</a> 
+                                    <a href="https://github.com/margareta75/HTML-Kravspec" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
+                                    <a href="https://margareta75.github.io/HTML-Kravspec" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View</button></a> 
                                 </div>
                             </div>
                         </div>
@@ -131,11 +127,11 @@
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="pics/flickr_app.png" alt="Flickr Search app" class="image-portfolio responsive"/>
-                            <div class="card-body">
+                            <div class="card-body background-style">
                                 <p class="card-text">"React Flickr" app - searching pictures via Flickr’s API - school project at Advanced JavaScript course.</p>
                                 <div class="d-flex justify-content-between align-items-center">                             
-                                    <a href="https://github.com/margareta75/react-flickr-app" target="_blank" type="button" class="btn btn-sm font-style button-style">View on GitHub</a>
-                                    <a href="https://margareta75.github.io/react-flickr-app/" target="_blank" type="button" class="btn btn-sm font-style button-style">View</a>
+                                    <a href="https://github.com/margareta75/react-flickr-app" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
+                                    <a href="https://margareta75.github.io/react-flickr-app/" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View</button></a>
                                 </div>
                             </div>
                         </div>
@@ -143,11 +139,11 @@
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="pics/Hangman_bg.jpg" alt="Hangman app" class="image-portfolio responsive"/>
-                            <div class="card-body">
+                            <div class="card-body background-style">
                                 <p class="card-text">Android app "Hangman Game" with timer - school project at Mobile development with Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/Hangman" target="_blank" type="button" class="btn btn-sm font-style button-style">View on GitHub</a>
-                                    <a href="#" type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-hangman">View</a>
+                                    <a href="https://github.com/margareta75/Hangman" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
+                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-hangman">View</button></a>
                                 </div>
                             </div>
                         </div>
@@ -155,11 +151,11 @@
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="pics/Santa1_bg.png" alt="Santa audio player" class="image-portfolio responsive"/>
-                            <div class="card-body">
+                            <div class="card-body background-style">
                                 <p class="card-text">Java Swing audio player "Message from Santa Claus" - school work at Java course.</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/audioPlayer" target="_blank" type="button" class="btn btn-sm font-style button-style">View on GitHub</a>
-                                    <a href="#" type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-santa">View</a> 
+                                    <a href="https://github.com/margareta75/audioPlayer" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
+                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-santa">View</button></a> 
                                 </div>
                             </div>
                         </div>
@@ -167,64 +163,65 @@
                 </div>
             </div>
         </div>
+        <!-- End #portfolio -->
 
         <!-- Competence section -->
         <div class="album py-5" id="skills">
             <div class="container container-skills">
-                <h5 class="card-header background-style-sections font-style font-white">Skills</h5>
+                <h5 class="card-header background-style-headers font-style font-white mb-3">Skills</h5>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col-sm">
                         <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-header background-style-sections font-style font-white">Courses</h5>
+                            <div class="card-body background-style">
+                                <h5 class="card-header background-style-headers font-style font-white">Courses</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">HTML5 och CSS</li>
-                                    <li class="list-group-item">JavaScript with jQuery</li>
-                                    <li class="list-group-item">Java programming</li>
-                                    <li class="list-group-item">Web development with Java</li>
-                                    <li class="list-group-item">Java Web Services</li>
-                                    <li class="list-group-item">Mobile development with Java</li>
-                                    <li class="list-group-item">Databases and database design</li>
-                                    <li class="list-group-item">Advanced JavaScript</li>
-                                    <li class="list-group-item">Advanced Java programming</li>
-                                    <li class="list-group-item">Test driven development in Java</li>
-                                    <li class="list-group-item">The consulting role</li>
-                                    <li class="list-group-item">Project management</li>
+                                    <li class="list-group-item background-style">HTML5 and CSS</li>
+                                    <li class="list-group-item background-style">JavaScript with jQuery</li>
+                                    <li class="list-group-item background-style">Java programming</li>
+                                    <li class="list-group-item background-style">Web development with Java</li>
+                                    <li class="list-group-item background-style">Java Web Services</li>
+                                    <li class="list-group-item background-style">Mobile development with Java</li>
+                                    <li class="list-group-item background-style">Databases and database design</li>
+                                    <li class="list-group-item background-style">Advanced JavaScript</li>
+                                    <li class="list-group-item background-style">Advanced Java programming</li>
+                                    <li class="list-group-item background-style">Test driven development in Java</li>
+                                    <li class="list-group-item background-style">The consulting role</li>
+                                    <li class="list-group-item background-style">Project management</li>
                                 </ul>  
                             </div>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-header background-style-sections font-style font-white">Tools</h5>
+                            <div class="card-body background-style">
+                                <h5 class="card-header background-style-headers font-style font-white">Tools</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Bootstrap</li>
-                                    <li class="list-group-item">Spring</li>
-                                    <li class="list-group-item">Github</li>
-                                    <li class="list-group-item">Codepen</li>
-                                    <li class="list-group-item">Codeshare</li>
-                                    <li class="list-group-item">Java Web-services</li>
-                                    <li class="list-group-item">Eclipse</li>
-                                    <li class="list-group-item">Brackets</li>
-                                    <li class="list-group-item">Visual Studio Code</li>
-                                    <li class="list-group-item">Android Studio</li>
-                                    <li class="list-group-item">NetBeans</li>
-                                    <li class="list-group-item">Postman</li>
+                                    <li class="list-group-item background-style">Bootstrap</li>
+                                    <li class="list-group-item background-style">Spring</li>
+                                    <li class="list-group-item background-style">Github</li>
+                                    <li class="list-group-item background-style">Codepen</li>
+                                    <li class="list-group-item background-style">Codeshare</li>
+                                    <li class="list-group-item background-style">Java Web-services</li>
+                                    <li class="list-group-item background-style">Eclipse</li>
+                                    <li class="list-group-item background-style">Brackets</li>
+                                    <li class="list-group-item background-style">Visual Studio Code</li>
+                                    <li class="list-group-item background-style">Android Studio</li>
+                                    <li class="list-group-item background-style">NetBeans</li>
+                                    <li class="list-group-item background-style">Postman</li>
                                 </ul>  
                             </div>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-header background-style-sections font-style font-white">Languages</h5>
+                            <div class="card-body background-style">
+                                <h5 class="card-header background-style-headers font-style font-white">Languages</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">HTML5</li>
-                                    <li class="list-group-item">CSS</li>
-                                    <li class="list-group-item">JavaScript</li>
-                                    <li class="list-group-item">Java</li>
-                                    <li class="list-group-item">Java FX</li>
+                                    <li class="list-group-item background-style">HTML5</li>
+                                    <li class="list-group-item background-style">CSS</li>
+                                    <li class="list-group-item background-style">JavaScript</li>
+                                    <li class="list-group-item background-style">Java</li>
+                                    <li class="list-group-item background-style">Java FX</li>
                                 </ul>  
                             </div>
                         </div>
@@ -232,6 +229,7 @@
                 </div>
             </div>
         </div>
+        <!-- End #skills -->
         
         <!-- Modal contact form section -->
         <div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="modal-contact-label" aria-hidden="true">
@@ -282,8 +280,8 @@
                     </div>
                     <div><img src="pics/java.png" alt="java" width="100%" height="auto"></div>
                     <div class="modal-footer">
-                        <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" type="button" class="btn font-style button-style">LinkedIn Profil</a>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-contact" data-bs-dismiss="modal" type="button" class="btn font-style button-style">Contact form</a>
+                        <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank"><button type="button" class="btn font-style button-style">LinkedIn</button></a>
+                        <a href="#"><button type="button" data-bs-toggle="modal" data-bs-target="#modal-contact" data-bs-dismiss="modal"  class="btn font-style button-style">Contact</button></a>
                         <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -356,18 +354,34 @@
         
         <!-- Footer -->
         <footer>
-           <div class="footer background-style-menu">
-               <p class="social" style="font-size:25px">
-                   <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" title="My LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                   <a href="#" data-bs-toggle="modal" data-bs-target="#modal-contact" title="Contact me"><i class="fas fa-envelope-square"></i></a>
-                   <a href="https://github.com/margareta75" target="_blank" title="My GitHub Profile"><i class="fab fa-github-square"></i></a>
-               </p>
-               <p><center>Copyright &copy; 2021 | Malgorzata Pick</center></p>         
+            <div class="footer background-style-menu">
+                <p class="social">
+                    <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" class ="px-3" title="My LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class ="px-3" data-bs-toggle="modal" data-bs-target="#modal-contact" title="Contact me"><i class="fas fa-envelope-square"></i></a>
+                    <a href="https://github.com/margareta75" target="_blank" class ="px-3" title="My GitHub Profile"><i class="fab fa-github-square"></i></a>
+                    <span class="float-end"><a href="#"><i class="fas fa-chevron-circle-up"></i></a></span>
+                </p>
+                <p class="copyright font-style">Copyright &copy; 2021 | Malgorzata Pick</p>
             </div>
         </footer>
+        <!-- End footer -->
 
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Script for closing menu on click in the menu -->
+        <script>
+        $(document).ready(function () {
+            $(document).click(function (event) {
+                var click = $(event.target);
+                var _open = $(".navbar-collapse").hasClass("show");
+                if (_open === true && !click.hasClass("navbar-toggler")) {
+                    $(".navbar-toggler").click();
+                }
+            });
+        });
+        </script>
 
     </body>
 </html>

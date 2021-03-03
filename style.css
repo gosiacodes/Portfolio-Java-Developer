@@ -1,17 +1,24 @@
 body {
-    background-color: #f7f7f7;
-    font-family: Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    background-color: #F8FFF8;
+    font-family: Roboto, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    color: #4d4d4d;
 }
 
 div {
     display: block;
 }
 
+a {
+    color: #435D99;
+    text-decoration: none;
+}
+
+a a:hover {
+    color: #CFF4D2;
+}
+
 .avatar {
-    margin-top: 25px;
-    border-radius: 50%;
-    width:200px; 
-    box-shadow: 0px 1px 5px rgba(0,0,0,.7);
+    width:220px;
 }
 
 .avatar:hover {
@@ -19,47 +26,67 @@ div {
 }
 
 .font-style {
-    font-family: Quantico, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    font-family: Varela Round, Tahoma, Helvetica, Verdana, Arial, sans-serif;
 }
 
 .font-white {
-    color: white;
+    color: #F8FFF8;
 }
 
 .font-darkblue {
-    color: #1B21A8;
+    color: #435D99;
 }
 
-.font-white a:hover {
-    color: #C3F50F;
+.font-darkblue a:hover {
+    color: #CFF4D2;
+}
+
+.background-style {
+    background-color: #F8FFF8;
 }
 
 .background-style-menu {
-    background: #FF0355;
+    background: #98DAC6;
 }
 
 .background-style-sections {
-    background: #1B21A8;
+    background: #98DAC6;
+}
+
+.background-style-headers {
+    background: #435D99;
 }
 
 .button-style {
-    background-color: #1B21A8;
-    color: white;
+    background-color: #435D99;
+    color: #F8FFF8;
+    transition-duration: 0.4s;
 }
 
 .button-style:hover {
-    background-color: #C3F50F;
-    color: #1B21A8;
+    background-color: #CFF4D2;
+    color: #435D99;
+    border-color: #435D99;
+}
+
+.menu-nav {
+    padding: 10px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
 .menu-nav a {
-    color: #1B21A8;
+    color: #435D99;
     font-size: 18px;
 }
 
 .menu-nav a:hover {
-  background-color: #1B24A8;
-  color: white;
+    background-color: #CFF4D2;
+    color: #435D99;
+    border-radius: 10px;
+}
+
+.logo {
+    margin-right: 20px;
 }
 
 .section {
@@ -74,26 +101,29 @@ div {
 }
 
 .section-title {
-    padding: 20px 0;
-    background-image: url("pics/code.jpg");
+    padding: 20px 5px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to right bottom, #cff4d2, #baeacd, #a6e0c8, #91d6c5, #7dccc3, #6cc3c2, #5bb9c0, #4bafbf, #3ba3bd, #2f98ba, #2a8bb6, #2c7fb0);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #text-title {
+    font-weight: bold;
     font-size: 50px;
-    color: #A81944;
+    color: #435D99;
 }
 
 #write-text {
+    font-weight: bold;
     font-size: 25px;
-    color: #1B29F5;
+    color: #F9F871;
 }
 
 .section-form {
     padding: 20px 0;
-    background: url("pics/office.jpg");
+    background: #98DAC6;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +141,7 @@ div {
 .container-portfolio {
     position: relative;
     text-align: center;
-    background: white;
+    background: #F8FFF8;
     padding: 40px;
     margin-top: -100px;   
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
@@ -120,9 +150,13 @@ div {
 .container-skills {
     position: relative;
     text-align: center;
-    background: white;
+    background: #F8FFF8;
     padding: 40px;     
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
+}
+
+.text-align-justify {
+    text-align: justify;
 }
 
 .image-portfolio {
@@ -137,41 +171,63 @@ div {
 
 .footer {
     position: relative;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
-    height: 100px;
-    color: white;
+    height: auto;
+    color: #435D99;
     text-align: center;
     display: block;
-    overflow: hidden;
     box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 }
 
-.social {
-    word-spacing: 20px;
+.social {   
+    font-size: 25px;
 }
+
 .social a {
-    color: white;
+    color: #435D99;
 }
+
 .social a:hover {
-    color: #C3F50F;
+    color: #F8FFF8;
+}
+
+.copyright {
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
     .avatar {
-        width:100px; 
+        width:110px; 
     }
     #text-title {
-        font-size: 30px;
+        font-size: 28px;
     }
     #write-text {
-        font-size: 20px;
+        font-size: 17px;
+    }
+    .section-title {
+        padding: 15px 2px;
+        padding-bottom: 5px;
     }
     .container-about {
         padding: 10px;
         padding-left: 0px;
         padding-right: 0px;
         font-size: 16px;
+    }
+    .social {
+        font-size: 20px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+    .footer {
+        padding: 10px;
+    }
+    .woman {
+        width: 5%;
+        height: 5%;
     }
 }
 

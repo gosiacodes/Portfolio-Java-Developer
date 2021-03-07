@@ -1,4 +1,4 @@
-# Portfolio-Java-Developer
+# Portfolio Java Developer
 Web portfolio with some of my projects - made under intership (LIA). 
 
 https://margareta75.github.io/Portfolio-Java-Developer/

@@ -19,7 +19,7 @@
     <body onload="typeWriter()">
         
         <!-- Navigation bar -->
-        <nav class="menu-nav navbar navbar-expand-lg fixed-top background-style-menu sticky-top font-style" id="menu">
+        <nav class="menu-nav navbar navbar-expand-lg background-style-menu sticky-top font-style" id="menu">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="english.html"><img src="pics/logo_mp.png" alt="logo" width="100" height="48"></a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
         </nav>
         <!-- End #menu -->
         
-        <!-- Title section -->        
+        <!-- Title section --> 
         <section class="section-title text-center" id="title">
             <p class="font-style" id="text-title">Junior Java Developer</p>
             <p class="font-style" id="write-text">I</p>           
@@ -67,171 +67,169 @@
         <!-- End #title -->
         
         <!-- About me section -->
-        <div id="aboutme">
-            <section class="section-about background-style-sections"> 
-                <div class="container">                  
-                    <div class="container-about">
-                        <div class="row">  
-                            <div class="card-body font-darkblue">
-                                <h2 class="font-style">Hi, I'm Gosia.</h2>
-                                <p class="card-text text-align-justify">I am a future Java developer with a passion for computers, technology and the internet, based in Malmö, Sweden. My dream is to be a web developer. Since I worked as a computer salesman for 6 years, I became interested in computers and am driven by working at the computer. I also became interested in how to create websites and software and therefore I study to be a Java developer. Right now I am looking for an <a href="#" data-bs-toggle="modal" data-bs-target="#modal-LIA" class="font-darkblue">internship</a>. I want to develop myself!</p>
-                            </div>
-                        </div> 
+        <div id="aboutme"></div>
+        <section class="section-about background-style-sections"> 
+            <div class="container">                  
+                <div class="container-about">
+                    <div class="row">  
+                        <div class="card-body">
+                            <h3 class="font-style">Hi, I'm Gosia.</h3>
+                            <p class="card-text text-align-justify">I am a future Java developer with a passion for computers, technology and the internet, based in Malmö, Sweden. My dream is to be a web developer. Since I worked as a computer salesman for 6 years, I became interested in computers and am driven by working at the computer. I also became interested in how to create websites and software and therefore I study to be a Java developer. Right now I am looking for an <a href="#" data-bs-toggle="modal" data-bs-target="#modal-LIA">internship</a>. I want to develop myself!</p>
+                        </div>
                     </div> 
-                </div>
-                <section class="section2 background-style-sections"></section>
-            </section>
-        </div>
+                </div> 
+            </div>
+            <section class="section2 background-style-sections"></section>
+        </section>
+        <!-- End #aboutme -->
         
-        <div class="info">
-            <!-- Portfolio section -->
-            <div class="album" id="portfolio">
-                <div class="container container-portfolio">
-                    <h5 class="card-header background-style-headers font-style font-white mb-3">Portfolio</h5>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <div class="card shadow-sm p-2">
-                                <img src="pics/MediaLibrary1_bg.png" alt="Media Library app" class="image-portfolio responsive"/>
-                                <div class="card-body background-style">
-                                    <p class="card-text">"Media Library" app - refactoring Swing app to JavaFx app and testing in JUnit - school project at Test driven development in Java course.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href="https://github.com/margareta75/Mediateket-fx" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
-                                        <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-media">View</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm p-2">
-                                <img src="pics/ChatBlue_bg.jpg" alt="Chat Blue app" class="image-portfolio responsive"/>
-                                <div class="card-body background-style">
-                                    <p class="card-text">Android firebase app "Chat Blue" with login and chat feature - school project at Mobile development with Java course.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href="https://github.com/margareta75/FirebaseApp" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
-                                        <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-chatblue">View</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm p-2">
-                                <img src="pics/GAAP_bg.png" alt="GAAP Airlines" class="image-portfolio responsive"/>
-                                <div class="card-body background-style">
-                                    <p class="card-text">Website design "GAAP Airlines" - group project at HTML5 and CSS course. I designed index.html (except the booking form) and plantravel.html</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href="https://github.com/margareta75/HTML-Kravspec" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
-                                        <a href="https://margareta75.github.io/HTML-Kravspec" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View</button></a> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm p-2">
-                                <img src="pics/flickr_app.png" alt="Flickr Search app" class="image-portfolio responsive"/>
-                                <div class="card-body background-style">
-                                    <p class="card-text">"Flickr Search" - searching pictures via Flickr’s API - school project at Advanced JavaScript course.</p>
-                                    <div class="d-flex justify-content-between align-items-center">                             
-                                        <a href="https://github.com/margareta75/react-flickr-app" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
-                                        <a href="https://margareta75.github.io/react-flickr-app/" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm p-2">
-                                <img src="pics/Hangman_bg.jpg" alt="Hangman app" class="image-portfolio responsive"/>
-                                <div class="card-body background-style">
-                                    <p class="card-text">Android app "Hangman Game" with timer - school project at Mobile development with Java course.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href="https://github.com/margareta75/Hangman" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
-                                        <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-hangman">View</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                  
-                        <div class="col">
-                            <div class="card shadow-sm p-2">
-                                <img src="pics/Santa1_bg.png" alt="Santa audio player" class="image-portfolio responsive"/>
-                                <div class="card-body background-style">
-                                    <p class="card-text">Java Swing audio player "Message from Santa Claus" - school work at Java course.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href="https://github.com/margareta75/audioPlayer" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View on GitHub</button></a>
-                                        <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-santa">View</button></a> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-            <!-- End #portfolio -->
-
-            <!-- Competence section -->
-            <div class="album py-5" id="skills">
-                <div class="container container-skills">
-                    <h5 class="card-header background-style-headers font-style font-white mb-3">Skills</h5>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col-sm">
-                            <div class="card">
-                                <div class="card-body background-style">
-                                    <h5 class="card-header background-style-headers font-style font-white">Courses</h5>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item background-style">HTML5 and CSS</li>
-                                        <li class="list-group-item background-style">JavaScript with jQuery</li>
-                                        <li class="list-group-item background-style">Java programming</li>
-                                        <li class="list-group-item background-style">Web development with Java</li>
-                                        <li class="list-group-item background-style">Java Web Services</li>
-                                        <li class="list-group-item background-style">Mobile development with Java</li>
-                                        <li class="list-group-item background-style">Databases and database design</li>
-                                        <li class="list-group-item background-style">Advanced JavaScript</li>
-                                        <li class="list-group-item background-style">Advanced Java programming</li>
-                                        <li class="list-group-item background-style">Test driven development in Java</li>
-                                        <li class="list-group-item background-style">The consulting role</li>
-                                        <li class="list-group-item background-style">Project management</li>
-                                    </ul>  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card">
-                                <div class="card-body background-style">
-                                    <h5 class="card-header background-style-headers font-style font-white">Tools</h5>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item background-style">Bootstrap</li>
-                                        <li class="list-group-item background-style">Spring</li>
-                                        <li class="list-group-item background-style">Github</li>
-                                        <li class="list-group-item background-style">Codepen</li>
-                                        <li class="list-group-item background-style">Codeshare</li>
-                                        <li class="list-group-item background-style">Java Web-services</li>
-                                        <li class="list-group-item background-style">Eclipse</li>
-                                        <li class="list-group-item background-style">Brackets</li>
-                                        <li class="list-group-item background-style">Visual Studio Code</li>
-                                        <li class="list-group-item background-style">Android Studio</li>
-                                        <li class="list-group-item background-style">NetBeans</li>
-                                        <li class="list-group-item background-style">Postman</li>
-                                    </ul>  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card">
-                                <div class="card-body background-style">
-                                    <h5 class="card-header background-style-headers font-style font-white">Languages</h5>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item background-style">HTML5</li>
-                                        <li class="list-group-item background-style">CSS</li>
-                                        <li class="list-group-item background-style">JavaScript</li>
-                                        <li class="list-group-item background-style">Java</li>
-                                        <li class="list-group-item background-style">Java FX</li>
-                                    </ul>  
+        <!-- Portfolio section -->
+        <div class="album info" id="portfolio">
+            <div class="container container-portfolio">
+                <h4 class="card-header background-style-headers font-style font-white mb-3">Portfolio</h4>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm p-2">
+                            <img src="pics/MediaLibrary1_bg.png" alt="Media Library app" class="image-portfolio responsive"/>
+                            <div class="card-body background-style">
+                                <p class="card-text">"Media Library" app - refactoring Swing app to JavaFx app and testing in JUnit - school project at Test driven development in Java course.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://github.com/margareta75/Mediateket-fx" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
+                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-media">View</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="card shadow-sm p-2">
+                            <img src="pics/ChatBlue_bg.jpg" alt="Chat Blue app" class="image-portfolio responsive"/>
+                            <div class="card-body background-style">
+                                <p class="card-text">Android firebase app "Chat Blue" with login and chat feature - school project at Mobile development with Java course.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://github.com/margareta75/FirebaseApp" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
+                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-chatblue">View</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm p-2">
+                            <img src="pics/GAAP_bg.jpg" alt="GAAP Airlines" class="image-portfolio responsive"/>
+                            <div class="card-body background-style">
+                                <p class="card-text">Website design "GAAP Airlines" - group project at HTML5 and CSS course. I designed index.html (except the booking form) and plantravel.html</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://github.com/margareta75/HTML-Kravspec" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
+                                    <a href="https://margareta75.github.io/HTML-Kravspec" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View</button></a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm p-2">
+                            <img src="pics/flickr_app.png" alt="Flickr Search app" class="image-portfolio responsive"/>
+                            <div class="card-body background-style">
+                                <p class="card-text">"Flickr Search" - searching pictures via Flickr’s API - school project at Advanced JavaScript course.</p>
+                                <div class="d-flex justify-content-between align-items-center">                             
+                                    <a href="https://github.com/margareta75/react-flickr-app" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
+                                    <a href="https://margareta75.github.io/react-flickr-app/" target="_blank"><button type="button" class="btn btn-sm font-style button-style">View</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm p-2">
+                            <img src="pics/Hangman_bg.jpg" alt="Hangman app" class="image-portfolio responsive"/>
+                            <div class="card-body background-style">
+                                <p class="card-text">Android app "Hangman Game" with timer - school project at Mobile development with Java course.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://github.com/margareta75/Hangman" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
+                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-hangman">View</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="col">
+                        <div class="card shadow-sm p-2">
+                            <img src="pics/Santa1_bg.png" alt="Santa audio player" class="image-portfolio responsive"/>
+                            <div class="card-body background-style">
+                                <p class="card-text">Java Swing audio player "Message from Santa Claus" - school work at Java course.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://github.com/margareta75/audioPlayer" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
+                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-santa">View</button></a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </div>
-            <!-- End #skills -->
         </div>
+        <!-- End #portfolio -->
+
+        <!-- Competence section -->
+        <div class="album py-5 info" id="skills">
+            <div class="container container-skills">
+                <h4 class="card-header background-style-headers font-style font-white mb-3">Skills</h4>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body background-style">
+                                <h5 class="card-header background-style-headers font-style font-white">Courses</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item background-style">HTML5 and CSS</li>
+                                    <li class="list-group-item background-style">JavaScript with jQuery</li>
+                                    <li class="list-group-item background-style">Java programming</li>
+                                    <li class="list-group-item background-style">Web development with Java</li>
+                                    <li class="list-group-item background-style">Java Web Services</li>
+                                    <li class="list-group-item background-style">Mobile development with Java</li>
+                                    <li class="list-group-item background-style">Databases and database design</li>
+                                    <li class="list-group-item background-style">Advanced JavaScript</li>
+                                    <li class="list-group-item background-style">Advanced Java programming</li>
+                                    <li class="list-group-item background-style">Test driven development in Java</li>
+                                    <li class="list-group-item background-style">The consulting role</li>
+                                    <li class="list-group-item background-style">Project management</li>
+                                </ul>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body background-style">
+                                <h5 class="card-header background-style-headers font-style font-white">Tools</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item background-style">Bootstrap</li>
+                                    <li class="list-group-item background-style">Spring</li>
+                                    <li class="list-group-item background-style">Github</li>
+                                    <li class="list-group-item background-style">Codepen</li>
+                                    <li class="list-group-item background-style">Codeshare</li>
+                                    <li class="list-group-item background-style">Java Web-services</li>
+                                    <li class="list-group-item background-style">Eclipse</li>
+                                    <li class="list-group-item background-style">Brackets</li>
+                                    <li class="list-group-item background-style">Visual Studio Code</li>
+                                    <li class="list-group-item background-style">Android Studio</li>
+                                    <li class="list-group-item background-style">NetBeans</li>
+                                    <li class="list-group-item background-style">Postman</li>
+                                </ul>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body background-style">
+                                <h5 class="card-header background-style-headers font-style font-white">Languages</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item background-style">HTML5</li>
+                                    <li class="list-group-item background-style">CSS</li>
+                                    <li class="list-group-item background-style">JavaScript</li>
+                                    <li class="list-group-item background-style">Java</li>
+                                    <li class="list-group-item background-style">Java FX</li>
+                                </ul>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End #skills -->
         
         <!-- Modal contact form section -->
         <div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="modal-contact-label" aria-hidden="true">
@@ -278,7 +276,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        I am currently in my fourth semester of the Java Developer Program at <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> in Malmö and am applying for LIA (Learning at Work) - internship, where I as a student can further develop my newfound skills under the guidance of a supervisor. Within the framework of Java, I worked i.a. with APIs, databases, frameworks and Android development. I also completed courses in HTML, CSS and JavaScript, and I also gained experience with GitHub and agile methods. I'm open to work from home due to the ongoing pandemic. Contact me via LinkedIn or contact form, if you are interrested!
+                        I am currently in my fourth semester of the Java Developer Program at <a href="https://gritacademy.se/" target="_blank">Grit Academy</a> YH in Malmö and am applying for LIA (Learning at Work) - internship, where I as a student can further develop my newfound skills under the guidance of a supervisor. Within the framework of Java, I worked i.a. with APIs, databases, frameworks and Android development. I also completed courses in HTML, CSS and JavaScript, and I also gained experience with GitHub and agile methods. I'm open to work from home due to the ongoing pandemic. Contact me via LinkedIn or contact form, if you are interrested!
                     </div>
                     <div><img src="pics/java.png" alt="java" width="100%" height="auto"></div>
                     <div class="modal-footer">
@@ -370,7 +368,7 @@
 
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         
         <!-- Script for closing menu on click in the menu -->
         <script>

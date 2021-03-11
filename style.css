@@ -2,7 +2,7 @@
 body {
     background-color: #F8FFF8;
     font-family: Roboto, Tahoma, Helvetica, Verdana, Arial, sans-serif;
-    color: #4d4d4d;
+    color: #0d0d0d;
 }
 
 div {
@@ -10,19 +10,16 @@ div {
 }
 
 a {
-    color: #435D99;
+    color: #0d0d0d;
     text-decoration: none;
 }
 
-a a:hover {
-    color: #CFF4D2;
+a:hover {
+    color: #435D99;
+    text-shadow: 3px 3px 5px #F8FFF8;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-*:before, *:after {
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
@@ -33,14 +30,6 @@ a a:hover {
 
 .font-white {
     color: #F8FFF8;
-}
-
-.font-darkblue {
-    color: #435D99;
-}
-
-.font-darkblue a:hover {
-    color: #CFF4D2;
 }
 
 .text-align-justify {
@@ -73,7 +62,7 @@ a a:hover {
 
 .button-style:hover {
     background-color: #CFF4D2;
-    color: #435D99;
+    color: #0d0d0d;
     border-color: #435D99;
 }
 
@@ -84,13 +73,15 @@ a a:hover {
 }
 
 .menu-nav a {
-    color: #435D99;
+    color: #0d0d0d;
     font-size: 18px;
+    
 }
 
 .menu-nav a:hover {
     background-color: #CFF4D2;
-    color: #435D99;
+    color: #0d0d0d;
+    text-shadow: none;
     border-radius: 10px;
 }
 
@@ -205,8 +196,9 @@ a a:hover {
     padding: 10px;
     width: 100%;
     height: auto;
-    color: #435D99;
+    color: #0d0d0d;
     text-align: center;
+    font-weight: bold;
     display: block;
     box-shadow: 0px 1px 5px rgba(67,93,153,.8);
 }

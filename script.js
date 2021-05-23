@@ -1,6 +1,6 @@
-var i = 0;
-var txt = ' design and code, and I love doing it.';
-var speed = 50;
+let i = 0;
+const txt = ' design and code, and I love doing it.';
+const speed = 50;
 
 function typeWriter() {
   if (i < txt.length) {

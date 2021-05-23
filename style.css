@@ -75,7 +75,6 @@ a:hover {
 .menu-nav a {
     color: #0d0d0d;
     font-size: 18px;
-    
 }
 
 .menu-nav a:hover {
@@ -204,7 +203,7 @@ a:hover {
 }
 
 .social {   
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .social a {
@@ -242,10 +241,10 @@ a:hover {
         font-size: 16px;
     }
     .social {
-        font-size: 20px;
+        font-size: 25px;
     }
     .copyright {
-        font-size: 14px;
+        font-size: 15px;
     }
     .footer {
         padding: 10px;

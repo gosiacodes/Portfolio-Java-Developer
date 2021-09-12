@@ -1,363 +1,823 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Malgorzata Pick | Portfolio | Junior Java Developer | Malmö, Sweden">
-        <meta name="keywords" content="Portfolio, Java Developer, Javautvecklare, webbutvecklare, utvecklare, Javaprogrammering, programmering, webbdesign, web design, HTML, CSS, JavaScript, Java, Malgorzata Pick">
-        <meta name="author" content="Malgorzata Pick">
-        <title>Malgorzata Pick | Java Developer</title>
-        <link rel="icon" href="pics/logo_1.png" type="image/jpg" sizes="16x16">
-        <!-- CSS --> 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quantico&family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3318035e44.js"></script>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Malgorzata Pick | Portfolio | Junior Java Developer | Malmö, Sweden"
+    />
+    <meta
+      name="keywords"
+      content="Portfolio, Java Developer, Javautvecklare, webbutvecklare, utvecklare, Javaprogrammering, programmering, webbdesign, web design, HTML, CSS, JavaScript, Java, Malgorzata Pick"
+    />
+    <meta name="author" content="Malgorzata Pick" />
+    <title>Malgorzata Pick | Java Developer</title>
+    <link rel="icon" href="pics/logo_1.png" type="image/jpg" sizes="16x16" />
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico&family=Roboto&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/3318035e44.js"></script>
+  </head>
 
-    <body onload="typeWriter()">
-        
-        <!-- Navigation bar -->
-        <nav class="menu-nav navbar navbar-expand-lg background-style-menu sticky-top font-style" id="menu">
-            <div class="container-fluid">
-                <a class="navbar-brand logo" href="index.html"><img src="pics/logo_mp.png" alt="logo" width="100" height="48"></a>
-                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Hem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutme">Om mig</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfölj</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Kompetens</a>
-                        </li>                   
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" dropdown-toggle href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kontakt</a>
-                            <ul class="dropdown-menu background-style-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="https://www.linkedin.com/in/malgorzatapick/" target="_blank">LinkedIn Profil</a></li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal-contact">Kontaktformulär</a></li>
-                            </ul>
-                        </li>
-                    </ul> 
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link" href="english.html">English</a></li>
-                    </ul> 
-                </div>
-            </div>
-        </nav>
-        <!-- End #menu -->
+  <body onload="typeWriter()">
+    <!-- Navigation bar -->
+    <nav
+      class="
+        menu-nav
+        navbar navbar-expand-lg
+        background-style-menu
+        sticky-top
+        font-style
+      "
+      id="menu"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html"
+          ><img src="pics/logo_mp.png" alt="logo" width="100" height="48"
+        /></a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">Om mig</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfölj</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Kompetens</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                dropdown-toggle
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Kontakt</a
+              >
+              <ul
+                class="dropdown-menu background-style-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.linkedin.com/in/malgorzatapick/"
+                    target="_blank"
+                    >LinkedIn Profil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-contact"
+                    >Kontaktformulär</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="english.html">English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End #menu -->
 
-        <!-- Title section -->
-        <section class="section-title text-center" id="title">
-            <p class="font-style" id="text-title">Junior Java Developer</p>
-            <p class="font-style" id="write-text">I</p>
-            <p><img src="pics/women-web-developer-12.svg" alt="avatar" class="avatar"></p>              
-        </section>
-        <!-- End #title -->
-        
-        <!-- About me section -->
-        <div id="aboutme"></div>
-        <section class="section-about background-style-sections">      
-            <div class="container">                   
-                <div class="container-about">
-                    <div class="row">                
-                        <div class="card-body">
-                            <h3 class="font-style">Hej! Jag heter Gosia.</h3>
-                            <p class="card-text text-align-justify">Jag är junior Javautvecklare med passion för datorer, teknik och internet och jag bor i Malmö. Sedan jag arbetade som säljare i en datorbutik i sex år, blev jag intresserad av datorer och älskade att jobba med dem. Jag älskar att skapa hemsidor och programvara. Min dröm är att bli en webbutvecklare. Jag vill utvecklas och är redo att anta nya utmaningar som utvecklare. Hör av dig om du är intresserad!</p>
-                        </div> 
-                    </div> 
-                </div> 
-            </div>             
-            <section class="section2 background-style-sections"></section>
-        </section>    
-        <!-- End #aboutme -->
-        
-        <!-- Portfolio section -->
-        <div class="album info" id="portfolio">
-            <div class="container container-portfolio">
-                <h4 class="card-header background-style-headers font-style font-white mb-3">Portfölj</h4>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm p-2">
-                            <img src="pics/MTTDver3.0.png" alt="My Things To Do App" class="image-portfolio responsive"/>
-                            <div class="card-body background-style">
-                                <p class="card-text">Webbtjänst "My Things To Do" kopplad till Firebase database med inloggningfunktion - ett projekt gjort under LIA-kursen (webbutveckling).</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/My-Things-To-Do-App" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
-                                    <a href="https://margareta75.github.io/My-Things-To-Do-App/" target="_blank"><button type="button" class="btn btn-sm font-style button-style">Visa</button></a> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm p-2">
-                            <img src="pics/ChatBlue_bg.jpg" alt="Chat Blue app" class="image-portfolio responsive"/>
-                            <div class="card-body background-style">
-                                <p class="card-text">Android firebase-app "Chat Blue" med inloggning- och chattfunktion - skolprojekt i kursen Mobilutveckling med Java.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/FirebaseApp" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
-                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-chatblue">Visa</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm p-2">
-                            <img src="pics/MediaLibrary1_bg.png" alt="Media Library app" class="image-portfolio responsive"/>
-                            <div class="card-body background-style">
-                                <p class="card-text">"Media Library" app - refactoring Swing app till JavaFx app och testning i JUnit - skolprojekt i kursen Testdriven utveckling i Java.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/Mediateket-fx" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
-                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-media">Visa</button></a> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm p-2">
-                            <img src="pics/flickr_app.png" alt="Flickr Search app" class="image-portfolio responsive"/>
-                            <div class="card-body background-style">
-                                <p class="card-text">"Flickr Search" - bildsökning via Flickrs API - skolprojekt i kursen  Avancerad JavaScript.</p>
-                                <div class="d-flex justify-content-between align-items-center">                             
-                                    <a href="https://github.com/margareta75/react-flickr-app" target="_blank"><button type="button" class="btn btn-sm  font-style button-style">GitHub</button></a>
-                                    <a href="https://margareta75.github.io/react-flickr-app/" target="_blank"><button type="button" class="btn btn-sm font-style button-style">Visa</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm p-2">
-                            <img src="pics/Hangman_bg.jpg" alt="Hangman app" class="image-portfolio responsive"/>
-                            <div class="card-body background-style">
-                                <p class="card-text">Android-app "Hangman Game" med timer - skolprojekt i kursen Mobilutveckling med Java.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/Hangman" target="_blank"><button type="button" class="btn btn-sm  font-style button-style">GitHub</button></a>
-                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-hangman">Visa</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm p-2">
-                            <img src="pics/Santa1_bg.png" alt="Santa audio player" class="image-portfolio responsive"/>
-                            <div class="card-body background-style">
-                                <p class="card-text">Java Swing audio player "Message from Santa Claus" - skolprojekt i Java-kursen.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://github.com/margareta75/audioPlayer" target="_blank"><button type="button" class="btn btn-sm font-style button-style">GitHub</button></a>
-                                    <a href="#"><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#modal-santa">Visa</button></a> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>         
-                </div>
-            </div>
-        </div>
-        <!-- End #portfolio -->
+    <!-- Title section -->
+    <section class="section-title text-center" id="title">
+      <p class="font-style" id="text-title">Junior Java Developer</p>
+      <p class="font-style" id="write-text">I</p>
+      <p>
+        <img
+          src="pics/women-web-developer-12.svg"
+          alt="avatar"
+          class="avatar"
+        />
+      </p>
+    </section>
+    <!-- End #title -->
 
-        <!-- Competence section -->
-        <div class="album py-5 info" id="skills">
-            <div class="container container-skills">
-                <h4 class="card-header background-style-headers font-style font-white mb-3">Kompetens</h4>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body background-style">
-                                <h5 class="card-header background-style-headers font-style font-white">Kurser</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item background-style">HTML5 och CSS</li>
-                                    <li class="list-group-item background-style">JavaScript med jQuery</li>
-                                    <li class="list-group-item background-style">Javaprogrammering</li>
-                                    <li class="list-group-item background-style">Webbutveckling med Java</li>
-                                    <li class="list-group-item background-style">Java Web-services</li>
-                                    <li class="list-group-item background-style">Mobilutveckling med Java</li>
-                                    <li class="list-group-item background-style">Databaser och databasdesign</li>
-                                    <li class="list-group-item background-style">Avancerad JavaScript</li>
-                                    <li class="list-group-item background-style">Avancerad Javaprogrammering</li>
-                                    <li class="list-group-item background-style">Testdriven utveckling i Java</li>
-                                    <li class="list-group-item background-style">Konsultrollen</li>
-                                    <li class="list-group-item background-style">Projektledning</li>
-                                </ul>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body background-style">
-                                <h5 class="card-header background-style-headers font-style font-white">Verktyg</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item background-style">Bootstrap</li>
-                                    <li class="list-group-item background-style">Spring</li>
-                                    <li class="list-group-item background-style">Github</li>
-                                    <li class="list-group-item background-style">Codepen</li>
-                                    <li class="list-group-item background-style">Codeshare</li>
-                                    <li class="list-group-item background-style">Java Web-services</li>
-                                    <li class="list-group-item background-style">Eclipse</li>
-                                    <li class="list-group-item background-style">Brackets</li>
-                                    <li class="list-group-item background-style">Visual Studio Code</li>
-                                    <li class="list-group-item background-style">Android Studio</li>
-                                    <li class="list-group-item background-style">NetBeans</li>
-                                    <li class="list-group-item background-style">Postman</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body background-style">
-                                <h5 class="card-header background-style-headers font-style font-white">Språk</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item background-style">HTML5</li>
-                                    <li class="list-group-item background-style">CSS</li>
-                                    <li class="list-group-item background-style">JavaScript</li>
-                                    <li class="list-group-item background-style">Java</li>
-                                    <li class="list-group-item background-style">Java FX</li>
-                                </ul>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- About me section -->
+    <div id="aboutme"></div>
+    <section class="section-about background-style-sections">
+      <div class="container">
+        <div class="container-about">
+          <div class="row">
+            <div class="card-body">
+              <h3 class="font-style">Hej! Jag heter Gosia.</h3>
+              <p class="card-text text-align-justify">
+                Jag är utbildad Javautvecklare från Malmö, med passion för
+                datorer, teknik och internet. Jag älskar att bygga webbsidor och
+                programvara. Min dröm är att jobba som en front-end utvecklare.
+                Jag vill utvecklas och är redo att anta nya utmaningar. Hör av
+                dig om du är intresserad!
+              </p>
             </div>
+          </div>
         </div>
-        <!-- End #skills -->
-        
-        <!-- Modal contact form section -->
-        <div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="modal-contact-label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content border-primary">
-                    <div class="modal-header font-darkblue">
-                        <h5 class="modal-title font-style" id="modal-contact-label">Kontakta mig</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <section class="section-form">
-                        <div class="modal-body">
-                            <div class="card-body">
-                                <form action="https://formspree.io/f/mgepbddp" method="POST">
-                                    <div class="mb-3">
-                                        <label for="name" class="col-form-label">Namn</label>
-                                        <input class="form-control" type="text" name="name" id="name" placeholder="Ditt namn">
-                                    </div>
-                                        <div class="mb-3">
-                                        <label for="email" class="col-form-label">Mejl</label>
-                                        <input class="form-control" type="text" name="_replyto" id="email" placeholder="namn@exempel.com">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Meddelande</label>
-                                        <textarea class="form-control" type="text" name="message" id="message-text" placeholder="Skriv ett meddelande" style="height:200px"></textarea>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="submit" class="btn font-style button-style">Skicka meddelande</button>
-                                        <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">Stäng</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </section>   
-                </div>
-            </div>
-        </div>
-        
-        <!-- Modal Media Library picture section -->
-        <div class="modal fade" id="modal-media" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content border-primary">
-                    <div class="modal-header font-darkblue">
-                        <h5 class="modal-title font-style" id="modal-media-label">"Media Library" inloggningssida</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div><img src="pics/MediaLibrary1.jpg" alt="Media Library app" width="100%" height="auto"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">Stäng</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Modal Hangman picture section -->
-        <div class="modal fade" id="modal-hangman" tabindex="-1" aria-labelledby="modal-hangman-label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content border-primary">
-                    <div class="modal-header font-darkblue">
-                        <h5 class="modal-title font-style" id="modal-hangman-label">"Hangman Game" med timer</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div><img src="pics/Hangman.jpg" alt="Hangman app" width="100%" height="auto"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">Stäng</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Modal Chat Blue picture section -->
-        <div class="modal fade" id="modal-chatblue" tabindex="-1" aria-labelledby="modal-chatblue-label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content border-primary">
-                    <div class="modal-header font-darkblue">
-                        <h5 class="modal-title font-style" id="modal-chatblue-label">"Chat Blue" app med inloggningsfunktion</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div><img src="pics/ChatBlue.jpg" alt="Chat Blue app" width="100%" height="auto"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">Stäng</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Modal Santa picture section -->
-        <div class="modal fade" id="modal-santa" tabindex="-1" aria-labelledby="modal-santa-label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content border-primary">
-                    <div class="modal-header font-darkblue">
-                        <h5 class="modal-title font-style" id="modal-santa-label">"Message From Santa Claus" audio player</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div><img src="pics/Santa1.png" alt="Santa audio player" width="100%" height="auto"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">Stäng</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <footer>
-            <div class="footer background-style-menu">
-                <p class="social">
-                    <a href="https://www.linkedin.com/in/malgorzatapick/" target="_blank" class ="px-3" title="My LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class ="px-3" data-bs-toggle="modal" data-bs-target="#modal-contact" title="Contact Me"><i class="fas fa-envelope-square"></i></a>
-                    <a href="https://github.com/margareta75" target="_blank" class ="px-3" title="My GitHub Profile"><i class="fab fa-github-square"></i></a>
-                    <span class="float-end" title="To The Top"><a href="#"><i class="fas fa-chevron-circle-up"></i></a></span>
+      </div>
+      <section class="section2 background-style-sections"></section>
+    </section>
+    <!-- End #aboutme -->
+
+    <!-- Portfolio section -->
+    <div class="album info" id="portfolio">
+      <div class="container container-portfolio">
+        <h4
+          class="
+            card-header
+            background-style-headers
+            font-style font-white
+            mb-3
+          "
+        >
+          Portfölj
+        </h4>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="pics/MTTDver3.0.png"
+                alt="My Things To Do App"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  Webbtjänst "My Things To Do" kopplad till Firebase database
+                  med inloggningfunktion - ett projekt gjort under LIA-kursen
+                  (webbutveckling).
                 </p>
-                <p class="copyright font-style">Copyright &copy; 2021 | Malgorzata Pick</p>         
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/margareta75/My-Things-To-Do-App"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a
+                    href="https://margareta75.github.io/My-Things-To-Do-App/"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      Visa
+                    </button></a
+                  >
+                </div>
+              </div>
             </div>
-        </footer>
-        <!-- End footer -->
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="pics/ChatBlue_bg.jpg"
+                alt="Chat Blue app"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  Android firebase-app "Chat Blue" med inloggning- och
+                  chattfunktion - skolprojekt i kursen Mobilutveckling med Java.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/margareta75/FirebaseApp"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-chatblue"
+                    >
+                      Visa
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="pics/MediaLibrary1_bg.png"
+                alt="Media Library app"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  "Media Library" app - refactoring Swing app till JavaFx app
+                  och testning i JUnit - skolprojekt i kursen Testdriven
+                  utveckling i Java.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/margareta75/Mediateket-fx"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-media"
+                    >
+                      Visa
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="pics/flickr_app.png"
+                alt="Flickr Search app"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  "Flickr Search" - bildsökning via Flickrs API - skolprojekt i
+                  kursen Avancerad JavaScript.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/margareta75/react-flickr-app"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a
+                    href="https://margareta75.github.io/react-flickr-app/"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      Visa
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="pics/Hangman_bg.jpg"
+                alt="Hangman app"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  Android-app "Hangman Game" med timer - skolprojekt i kursen
+                  Mobilutveckling med Java.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/margareta75/Hangman"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-hangman"
+                    >
+                      Visa
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="pics/Santa1_bg.png"
+                alt="Santa audio player"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  Java Swing audio player "Message from Santa Claus" -
+                  skolprojekt i Java-kursen.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/margareta75/audioPlayer"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-santa"
+                    >
+                      Visa
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #portfolio -->
 
-        <script src="js/bootstrap.bundle.min.js"></script>      
-        <script src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        
-        <!-- Script for closing menu on click in the menu -->
-        <script>
-        $(document).ready(function () {
-            $(document).click(function (event) {
-                var click = $(event.target);
-                var _open = $(".navbar-collapse").hasClass("show");
-                if (_open === true && !click.hasClass("navbar-toggler")) {
-                    $(".navbar-toggler").click();
-                }
-            });
+    <!-- Competence section -->
+    <div class="album py-5 info" id="skills">
+      <div class="container container-skills">
+        <h4
+          class="
+            card-header
+            background-style-headers
+            font-style font-white
+            mb-3
+          "
+        >
+          Kompetens
+        </h4>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body background-style">
+                <h5
+                  class="
+                    card-header
+                    background-style-headers
+                    font-style font-white
+                  "
+                >
+                  Kurser
+                </h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item background-style">
+                    HTML5 och CSS
+                  </li>
+                  <li class="list-group-item background-style">
+                    JavaScript med jQuery
+                  </li>
+                  <li class="list-group-item background-style">
+                    Javaprogrammering
+                  </li>
+                  <li class="list-group-item background-style">
+                    Webbutveckling med Java
+                  </li>
+                  <li class="list-group-item background-style">
+                    Java Web-services
+                  </li>
+                  <li class="list-group-item background-style">
+                    Mobilutveckling med Java
+                  </li>
+                  <li class="list-group-item background-style">
+                    Databaser och databasdesign
+                  </li>
+                  <li class="list-group-item background-style">
+                    Avancerad JavaScript
+                  </li>
+                  <li class="list-group-item background-style">
+                    Avancerad Javaprogrammering
+                  </li>
+                  <li class="list-group-item background-style">
+                    Testdriven utveckling i Java
+                  </li>
+                  <li class="list-group-item background-style">
+                    Konsultrollen
+                  </li>
+                  <li class="list-group-item background-style">
+                    Projektledning
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body background-style">
+                <h5
+                  class="
+                    card-header
+                    background-style-headers
+                    font-style font-white
+                  "
+                >
+                  Verktyg
+                </h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item background-style">Bootstrap</li>
+                  <li class="list-group-item background-style">Spring</li>
+                  <li class="list-group-item background-style">Github</li>
+                  <li class="list-group-item background-style">Codepen</li>
+                  <li class="list-group-item background-style">Codeshare</li>
+                  <li class="list-group-item background-style">
+                    Java Web-services
+                  </li>
+                  <li class="list-group-item background-style">Eclipse</li>
+                  <li class="list-group-item background-style">Brackets</li>
+                  <li class="list-group-item background-style">
+                    Visual Studio Code
+                  </li>
+                  <li class="list-group-item background-style">
+                    Android Studio
+                  </li>
+                  <li class="list-group-item background-style">NetBeans</li>
+                  <li class="list-group-item background-style">Postman</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body background-style">
+                <h5
+                  class="
+                    card-header
+                    background-style-headers
+                    font-style font-white
+                  "
+                >
+                  Språk
+                </h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item background-style">HTML5</li>
+                  <li class="list-group-item background-style">CSS</li>
+                  <li class="list-group-item background-style">JavaScript</li>
+                  <li class="list-group-item background-style">Java</li>
+                  <li class="list-group-item background-style">Java FX</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #skills -->
+
+    <!-- Modal contact form section -->
+    <div
+      class="modal fade"
+      id="modal-contact"
+      tabindex="-1"
+      aria-labelledby="modal-contact-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-contact-label">
+              Kontakta mig
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <section class="section-form">
+            <div class="modal-body">
+              <div class="card-body">
+                <form action="https://formspree.io/f/mgepbddp" method="POST">
+                  <div class="mb-3">
+                    <label for="name" class="col-form-label">Namn</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Ditt namn"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="col-form-label">Mejl</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="_replyto"
+                      id="email"
+                      placeholder="namn@exempel.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"
+                      >Meddelande</label
+                    >
+                    <textarea
+                      class="form-control"
+                      type="text"
+                      name="message"
+                      id="message-text"
+                      placeholder="Skriv ett meddelande"
+                      style="height: 200px"
+                    ></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn font-style button-style">
+                      Skicka meddelande
+                    </button>
+                    <button
+                      type="button"
+                      class="btn font-style button-style"
+                      data-bs-dismiss="modal"
+                    >
+                      Stäng
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Media Library picture section -->
+    <div
+      class="modal fade"
+      id="modal-media"
+      tabindex="-1"
+      aria-labelledby="modal-media-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              "Media Library" inloggningssida
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div>
+            <img
+              src="pics/MediaLibrary1.jpg"
+              alt="Media Library app"
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn font-style button-style"
+              data-bs-dismiss="modal"
+            >
+              Stäng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Hangman picture section -->
+    <div
+      class="modal fade"
+      id="modal-hangman"
+      tabindex="-1"
+      aria-labelledby="modal-hangman-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-hangman-label">
+              "Hangman Game" med timer
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div>
+            <img
+              src="pics/Hangman.jpg"
+              alt="Hangman app"
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn font-style button-style"
+              data-bs-dismiss="modal"
+            >
+              Stäng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Chat Blue picture section -->
+    <div
+      class="modal fade"
+      id="modal-chatblue"
+      tabindex="-1"
+      aria-labelledby="modal-chatblue-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-chatblue-label">
+              "Chat Blue" app med inloggningsfunktion
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div>
+            <img
+              src="pics/ChatBlue.jpg"
+              alt="Chat Blue app"
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn font-style button-style"
+              data-bs-dismiss="modal"
+            >
+              Stäng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Santa picture section -->
+    <div
+      class="modal fade"
+      id="modal-santa"
+      tabindex="-1"
+      aria-labelledby="modal-santa-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-santa-label">
+              "Message From Santa Claus" audio player
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div>
+            <img
+              src="pics/Santa1.png"
+              alt="Santa audio player"
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn font-style button-style"
+              data-bs-dismiss="modal"
+            >
+              Stäng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer background-style-menu">
+        <p class="social">
+          <a
+            href="https://www.linkedin.com/in/malgorzatapick/"
+            target="_blank"
+            class="px-3"
+            title="My LinkedIn Profile"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="#"
+            class="px-3"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-contact"
+            title="Contact Me"
+            ><i class="fas fa-envelope-square"></i
+          ></a>
+          <a
+            href="https://github.com/margareta75"
+            target="_blank"
+            class="px-3"
+            title="My GitHub Profile"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <span class="float-end" title="To The Top"
+            ><a href="#"><i class="fas fa-chevron-circle-up"></i></a
+          ></span>
+        </p>
+        <p class="copyright font-style">
+          Copyright &copy; 2021 | Malgorzata Pick
+        </p>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Script for closing menu on click in the menu -->
+    <script>
+      $(document).ready(function () {
+        $(document).click(function (event) {
+          var click = $(event.target);
+          var _open = $(".navbar-collapse").hasClass("show");
+          if (_open === true && !click.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+          }
         });
-        </script>
-        
-    </body>
+      });
+    </script>
+  </body>
 </html>
